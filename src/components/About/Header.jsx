@@ -69,7 +69,7 @@ export default function Header() {
         </section>
       </div>
 
-      <div className="flex justify-center gap-8 mt-10 md:mt-20">
+      {/* <div className="flex justify-center gap-8 mt-10 md:mt-20">
         {Array.from({ length: 5 }).map((_, index) => (
           <div key={index}>
             <motion.img
@@ -90,7 +90,7 @@ export default function Header() {
             />
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
