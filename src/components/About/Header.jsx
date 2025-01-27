@@ -11,7 +11,7 @@ export default function Header() {
     <div className=" pt-16 pb-20 font-jakarta ">
       <div
         className="absolute inset-0 bg-no-repeat bg-center -z-10 bg-cover bg-[#e6f8ff]"
-        style={{ minHeight: "130vh", width: "100%" }}
+        style={{  width: "100%" }}
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 max-w-6xl xl:max-w-7xl mx-auto px-6 md:px-10">
