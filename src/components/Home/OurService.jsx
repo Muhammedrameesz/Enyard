@@ -44,18 +44,18 @@ export default function OurService() {
   ];
 
   return (
-    <div className="relative pb-10 font-mono">
+    <div className="relative pb-10 font-jakarta">
       <div
         className="absolute w-full h-full -z-10 object-cover"
         style={{ backgroundImage: `url(${section3Bg})` }}
       ></div>
 
-      <div className="flex flex-col justify-center mb-10 md:mb-16 items-center text-center text-3xl sm:text-4xl md:text-5xl  font-semibold uppercase ">
+      <div className="flex flex-col justify-center mb-10 md:mb-16 items-center text-center text-3xl sm:text-4xl md:text-5xl  font-semibold text-gray-900 ">
         <p className="text-base text-red-500 mb-5">Our Service</p>
-        <h1>what we can do for your </h1>
+        <h1>What We Can Do For Your </h1>
         <h1>
-          <span className="border-b-4 border-red-300">application</span>{" "}
-          <span className="text-red-600">design</span>
+          <span className="border-b-4 border-red-300">Application</span>{" "}
+          <span className="text-red-600">Design</span>
         </h1>
       </div>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center text-center">
@@ -84,9 +84,9 @@ export default function OurService() {
               >
                 {item.icon}
               </div>
-              <h1 className="flex flex-col text-xl font-bold text-gray-800 uppercase">
+              <h1 className="flex flex-col text-xl font-semibold  text-gray-800 text-start">
                 {item.title}{" "}
-                <span className="text-base font-poppins font-normal text-gray-600 normal-case">
+                <span className="text-base font-jakarta font-normal text-gray-600 normal-case">
                   {item.description}
                 </span>
               </h1>

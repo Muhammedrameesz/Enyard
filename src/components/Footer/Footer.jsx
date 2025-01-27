@@ -7,7 +7,7 @@ import {useNavigate} from "react-router-dom"
 const Footer = () => {
     const navigate = useNavigate()
   return (
-    <footer className="py-10  px-5 font-poppins  relative w-full h-full">
+    <footer className="py-10  px-5 font-jakarta  relative w-full h-full">
       <div
         className="absolute inset-0 bg-no-repeat bg-center bg-cover border -z-10 rotate-180 "
         style={{

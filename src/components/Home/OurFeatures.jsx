@@ -22,7 +22,7 @@ export default function OurFeatures() {
   ];
 
   return (
-    <div className="py-20 font-mono relative bg-red-50 ">
+    <div className="py-20 font-jakarta relative bg-red-50 ">
         <OrangeDott/>
       <div
         className="absolute inset-0 z-0 bg-no-repeat bg-center overflow-hidden "
@@ -46,10 +46,10 @@ export default function OurFeatures() {
                 {item.icon}
               </div>
               <section className="flex flex-col gap-2">
-                <h1 className=" text-2xl  font-semibold font-poppins">
+                <h1 className=" text-xl  font-semibold ">
                   {item.title}
                 </h1>
-                <p className="text-gray-600 text-lg font-poppins">
+                <p className="text-gray-600 text-lg ">
                   {item.description}
                 </p>
               </section>
@@ -58,14 +58,14 @@ export default function OurFeatures() {
         </div>
 
         <div className="z-10">
-          <h1 className="text-base uppercase font-semibold text-red-500 mb-5">
+          <h1 className="text-sm  font-semibold text-red-500 mb-5">
             Our Features
           </h1>
-          <h1 className="uppercase text-3xl sm:text-4xl md:text-5xl  font-semibold mb-5">
-            Lorem ipsum dolor sit <span className="text-red-500">amet</span>{" "}
-            consectetur{" "}
+          <h1 className=" text-3xl sm:text-4xl md:text-5xl text-gray-900 font-semibold mb-5">
+            Lorem Ipsum Dolor Sit <span className="text-red-500">Amet</span>{" "}
+            Consectetur{" "}
           </h1>
-          <p className="text-xl text-gray-600 font-poppins mb-5">
+          <p className="text-lg text-gray-600 font-jakarta mb-6">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex
             perspiciatis enim rerum soluta tempora quasi ut rem impedit quo
             atque vel, neque ad debitis cupiditate optio nihil placeat
@@ -73,35 +73,35 @@ export default function OurFeatures() {
           </p>
 
           <div className="flex gap-5 items-center font-semibold text-gray-900 mb-5">
-            <h1 className="text-2xl p-1  px-4 border border-dashed border-red-500 text-red-500 rounded-full">
+            <h1 className="text-xl p-1  px-4 border border-dashed border-red-500 text-red-500 rounded-full">
               1
             </h1>
-            <h1 className="text-xl  font-poppins">
-              Keep your all data protected{" "}
+            <h1 className="text-lg">
+            Keep Your All Data Protected
             </h1>
           </div>
           <div className="flex gap-5 items-center font-semibold text-gray-900 mb-5">
-            <h1 className="text-2xl p-1  px-4 border border-dashed border-red-500 text-red-500 rounded-full">
+            <h1 className="text-xl p-1  px-3 border border-dashed border-red-500 text-red-500 rounded-full">
               2
             </h1>
-            <h1 className="text-xl  font-poppins">
-              Keep your all data protected{" "}
+            <h1 className="text-lg">
+            Keep Your All Data Protected
             </h1>
           </div>
           <div className="flex gap-5 items-center font-semibold text-gray-900 mb-5">
-            <h1 className="text-2xl p-1  px-4 border border-dashed border-red-500 text-red-500 rounded-full">
+            <h1 className="text-xl p-1  px-3 border border-dashed border-red-500 text-red-500 rounded-full">
               3
             </h1>
-            <h1 className="text-xl  font-poppins">
-              Keep your all data protected{" "}
+            <h1 className="text-lg">
+            Keep Your All Data Protected
             </h1>
           </div>
           <div className="flex gap-5 items-center font-semibold text-gray-900 mb-5">
-            <h1 className="text-2xl p-1  px-4 border border-dashed border-red-500 text-red-500 rounded-full">
+            <h1 className="text-xl p-1  px-3 border border-dashed border-red-500 text-red-500 rounded-full">
               4
             </h1>
-            <h1 className="text-xl font-poppins">
-              Keep your all data protected{" "}
+            <h1 className="text-lg">
+            Keep Your All Data Protected
             </h1>
           </div>
         </div>

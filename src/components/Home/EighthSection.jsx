@@ -3,14 +3,14 @@ import { MdDone } from "react-icons/md";
 
 export default function EighthSection() {
   return (
-    <div className="py-10 font-poppins">
+    <div className="py-10 font-jakarta">
       <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 max-w-6xl xl:max-w-7xl mx-auto px-6 md:px-10">
         <div className="flex flex-col gap-5">
           <p className="text-red-800 text-base"># No 1 Best Performance</p>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">
             Manage Your Fleet of Devices From One Platform
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-base text-gray-600">
             Duis gravida augue velit eu dignissim felis pos quis. Integ ante
             urna gravida nec molestie mattis ultricies risus sed.
           </p>
@@ -20,7 +20,7 @@ export default function EighthSection() {
               <MdDone />
             </h1>
             <div className="flex flex-col gap-2">
-              <h1 className="text-xl font-semibold">
+              <h1 className="text-lg font-semibold text-gray-900">
                 Enforce Passcode Policy
               </h1>
               <p className="text-bse text-gray-600">
@@ -35,7 +35,7 @@ export default function EighthSection() {
               <MdDone />
             </h1>
             <div className="flex flex-col gap-2">
-              <h1 className="text-xl font-semibold">
+              <h1 className="text-lg font-semibold text-gray-900">
                 Enforce Passcode Policy
               </h1>
               <p className="text-base text-gray-600">

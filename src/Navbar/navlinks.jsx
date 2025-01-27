@@ -20,21 +20,21 @@ export const dropdownLinks = [
     element: "About Us",
     ref: "Company",
     icon:<FaUserCircle/>,
-    des:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,"
+    des:"Lorem ipsum dolor sit amet consectetur. "
   },
   
   {
     path: "/our-team",
     element: "Our Team",
     ref: "Company",
-     des:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,",
+     des:"Lorem ipsum dolor sit amet consectetur.",
      icon:<FaUserFriends/>
   },
   {
     path: "/partners",
     element: "Partners",
     ref: "Company",
-     des:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,",
+     des:"Lorem ipsum dolor sit amet consectetur.",
      icon:<FaRegHandshake/>
   },
 
@@ -42,14 +42,14 @@ export const dropdownLinks = [
     path: "/blog",
     element: "Blog",
     ref: "Resources",
-     des:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,",
+     des:"Lorem ipsum dolor sit amet consectetur.",
      icon:<FaBlog/>
   },
   {
     path: "/career",
     element: "Career",
     ref: "Resources",
-     des:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,",
+     des:"Lorem ipsum dolor sit amet consectetur.",
      icon:<FaChartLine/>
   },
 ];

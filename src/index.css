@@ -10,6 +10,21 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Lanze';
+  src: url('/src/assets/fonts/Lanze-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Halo Grotesk';
+  src: url('/src/assets/fonts/HaloGrotesk-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 @media (prefers-color-scheme: dark) {
   body {
     background: #fff !important; 

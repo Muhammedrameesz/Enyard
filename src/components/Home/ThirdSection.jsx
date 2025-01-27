@@ -2,7 +2,7 @@ import InstalledApp from "../../assets/images/installed-app-img.webp";
 
 export default function ThirdSection() {
   return (
-    <div className="pt-16 pb-10 font-mono bg-white ">
+    <div className="pt-16 pb-10 font-jakarta bg-white ">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 max-w-6xl xl:max-w-7xl mx-auto px-6 md:px-10">
         {/* Text Section */}
         {/* Image Section */}
@@ -14,15 +14,15 @@ export default function ThirdSection() {
           />
         </section>
         <section className="flex flex-col gap-8 text-center md:text-left">
-          <div className="flex gap-8 text-xl">
+          <div className="flex gap-8 text-lg">
             <h1 className="p2- px-4 rounded-full bg-gradient-to-br from-purple-400 to-red-600 text-white">
               TOP
             </h1>
             <h1 className="tracking-tight">Rated Apps</h1>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl  font-semibold uppercase ">
-            why <span className="text-red-500">1300k</span> customer installed
-            our app.
+          <h1 className="text-3xl sm:text-4xl md:text-5xl leading-relaxed font-semibold text-gray-900">
+            Why <span className="text-red-500">1300k</span> Customer Installed
+            Our App.
           </h1>
           <p className="text-lg sm:text-xl  text-gray-700 leading-relaxed">
             Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing

@@ -6,7 +6,7 @@ import { FaApple } from "react-icons/fa";
 export default function SixthSection() {
   return (
     <div
-      className="relative w-full h-full py-10 md:py-16 overflow-hidden font-poppins "
+      className="relative w-full h-full py-10 md:py-16 overflow-hidden font-jakarta "
       style={{
         backgroundImage: `url(${AppInstallBg})`,
         backgroundSize: "cover",
@@ -23,11 +23,11 @@ export default function SixthSection() {
           Try For Free Application
         </p>
         <div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl uppercase font-semibold text-white mb-2">
-            Take what you want, but leave
+          <h1 className="text-3xl md:text-4xl lg:text-5xl  font-semibold text-white mb-2">
+            Take What You Want, But Leave
           </h1>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl uppercase font-semibold text-white mb-4">
-            <span className="text-red-600">app install</span> alone
+          <h1 className="text-3xl md:text-4xl lg:text-5xl  font-semibold text-white mb-4">
+            <span className="text-red-600">App Install</span> Alone
           </h1>
         </div>
         <p className="text-lg text-white mb-6">
