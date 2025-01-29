@@ -97,7 +97,7 @@ export default function OurTeam() {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-52 h-52 rounded-full object-cover "
+                    className="w-32 h-32 md:w-40 md:h-40 lg:w-52 lg:h-52 rounded-full object-cover "
                   />
                   <div className="flex flex-col items-start">
                     <h3 className="text-lg font-semibold mb-1 ">{member.name}</h3>
