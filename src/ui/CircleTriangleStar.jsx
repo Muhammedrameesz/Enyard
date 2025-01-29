@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa";
 
 const AnimatedShapes = () => {
   return (
-    <div className="  w-full h-full flex items-center justify-center">
+    <div className="  w-full h-full flex items-center justify-center opacity-30">
       {/* Circle Motion */}
       <motion.div
         animate={{

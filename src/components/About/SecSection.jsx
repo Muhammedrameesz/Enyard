@@ -23,7 +23,7 @@ function FeaturesSection() {
     },
   ];
   return (
-    <div className="py-20 font-jakarta ">
+    <div className="pb-20 pt-10 font-jakarta ">
       <div className="flex flex-col   px-10 md:px-20 gap-5 max-w-2xl mb-10 md:mb-20">
         <h1 className="text-red-500 font-semibold">Know More About Us</h1>
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900">

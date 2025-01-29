@@ -1,14 +1,13 @@
 import ActiveUserImage from "../../assets/AboutImages/Active-user.webp";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import VectorImage from "../../assets/AboutImages/Vector-628.png";
-import EnyardLogo from "../../assets/images/Enyard new.png";
-import { useState } from "react";
-import { motion } from "framer-motion";
+
+
 
 export default function Header() {
-  const [logoHover, setLogoHover] = useState("");
+ 
   return (
-    <div className=" pt-16 pb-20 font-jakarta ">
+    <div className=" pt-16 pb-10 font-jakarta ">
       <div
         className="absolute inset-0 bg-no-repeat bg-center -z-10 bg-cover bg-[#e6f8ff]"
         style={{  width: "100%" }}
@@ -69,28 +68,7 @@ export default function Header() {
         </section>
       </div>
 
-      {/* <div className="flex justify-center gap-8 mt-10 md:mt-20">
-        {Array.from({ length: 5 }).map((_, index) => (
-          <div key={index}>
-            <motion.img
-              initial={{ opacity: 1, y: 0 }}
-              animate={{
-                y: logoHover === index ? [0, 15, -15, 0] : [0, -15, 15, 0], 
-                opacity: logoHover === index ? [1,  0, 0, 1] : [0,  0, 0, 1],
-              }}
-              transition={{
-                duration: 0.6, // Adjust duration for smoothness
-                ease: "easeInOut",
-              }}
-              onMouseEnter={() => setLogoHover(index)}
-              onMouseLeave={() => setLogoHover(null)}
-              src={EnyardLogo}
-              alt="Enyard Logo"
-              className="w-32"
-            />
-          </div>
-        ))}
-      </div> */}
+    
     </div>
   );
 }

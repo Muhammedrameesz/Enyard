@@ -1,6 +1,6 @@
 import BgEffect from "../../assets/AboutImages/bg-effect-1-1-1.webp";
 import { MdOutlineAccessTime } from "react-icons/md";
-import Vector35 from "../../assets/AboutImages/Vector-35.png";
+// import Vector35 from "../../assets/AboutImages/Vector-35.png";
 
 export default function DarkThemedSection() {
   const features = [
@@ -10,20 +10,20 @@ export default function DarkThemedSection() {
     "User friendly",
   ];
   return (
-    <div className=" font-jakarta bg-white">
-      <section className=" relative flex flex-col items-center justify-center py-20 gap-7 text-white bg-[#060a33]">
+    <div className="relative font-jakarta ">
+      {/* <div
+        className="hidden md:block absolute left-1/3 top-1/2  h-full w-full z-10 object-cover bg-no-repeat object-center overflow-hidden"
+        style={{
+          backgroundImage: `url(${Vector35})`,
+        }}
+      /> */}
+      <section className=" relative flex flex-col items-center justify-center bg-no-repeat bg-cover bg-center gap-7  text-white py-10 bg-[#060a33]" >
         <div
-          className="absolute inset-0  bg-no-repeat bg-cover bg-center -z-0"
-          style={{ backgroundImage: `url(${BgEffect})`, }}
+          className="absolute  inset-0  bg-no-repeat bg-cover bg-center  -z-0"
+          style={{ backgroundImage: `url(${BgEffect})` }}
         />
-        {/* <div
-          className="hidden md:block absolute left-1/4  h-full w-full z-10 object-cover bg-no-repeat object-center overflow-x-hidden"
-          style={{
-            backgroundImage: `url(${Vector35})`,
-          }}
-        /> */}
 
-        <div className="text-center mb-8 flex flex-col gap-2">
+        <div className="text-center mb-8 flex flex-col gap-2 ">
           <h1 className="text-3xl md:text-4xl font-semibold">
             Embedded{" "}
             <span className="relative inline-block">
@@ -61,7 +61,7 @@ export default function DarkThemedSection() {
           </button>
         </div>
 
-        <div className="flex justify-center items-center gap-8 text-gray-400  py-4">
+        <div className=" flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 text-gray-400  py-4">
           {features.map((feature, index) => (
             <div key={index} className="flex items-center gap-2">
               <MdOutlineAccessTime className="text-xl" />

@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { MdArrowRightAlt } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import ResponsiveNav from "./ResponsiveNav.jsx";
 
 export default function Navbar() {
   const [hoverLink, setHoverLink] = useState("");
@@ -31,13 +32,13 @@ export default function Navbar() {
           <motion.div
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -50 }} // Adjust the y-axis for a smoother exit
+            exit={{ opacity: 0, y: -50 }} 
             transition={{
               duration: 0.8,
               ease: [0.4, 0, 0.2, 1],
             }}
             style={{ zIndex: 1000 }}
-            className="p-3 py-5 font-lanze bg-white shadow-normal fixed w-full"
+            className="p-3 py-5 font-lanze bg-white shadow-normal fixed w-screen"
           >
             <section className="flex items-center justify-around gap-4">
               <img
@@ -45,7 +46,7 @@ export default function Navbar() {
                 alt="Enyard Logo"
                 className="w-[130px] sm:w-[150px] md:w-[170px] h-full object-cover cursor-pointer"
               />
-              <ul className="relative flex gap-8 border p-2 px-4 rounded-full border-gray-900">
+              <ul className="hidden relative lg:flex gap-8 border p-2 px-4 rounded-full border-gray-900">
                 {navLinks?.map((item, index) => (
                   <li
                     key={index}
@@ -133,7 +134,7 @@ export default function Navbar() {
                 ))}
               </ul>
 
-              <div className="flex">
+              <div className="hidden lg:flex">
                 <button className="border p-2 px-4 rounded-full ml-4 border-gray-900 text-lg hover:bg-black hover:text-white transition-colors duration-300">
                   Contact
                 </button>
@@ -144,6 +145,10 @@ export default function Navbar() {
                   Book A Demo
                 </button>
               </div>
+              
+              <div className="block lg:hidden">
+           <ResponsiveNav/>
+          </div>
             </section>
           </motion.div>
         </AnimatePresence>
@@ -159,7 +164,7 @@ export default function Navbar() {
             alt="Enyard Logo"
             className="w-[130px] sm:w-[150px] md:w-[170px] h-full object-cover cursor-pointer"
           />
-          <ul className="relative flex gap-8 border p-2 px-4 rounded-full border-gray-900">
+          <ul className="relative hidden lg:flex gap-8 border p-2 px-4 rounded-full border-gray-900">
             {navLinks?.map((item, index) => (
               <li
                 key={index}
@@ -244,7 +249,7 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <div className="flex">
+          <div className="hidden lg:flex">
             <button className="border p-2 px-4 rounded-full ml-4 border-gray-900 text-lg hover:bg-black hover:text-white transition-colors duration-300">
               Contact
             </button>
@@ -254,6 +259,9 @@ export default function Navbar() {
               </span>{" "}
               Book A Demo
             </button>
+          </div>
+          <div className="block lg:hidden">
+           <ResponsiveNav/>
           </div>
         </section>
       </div>
