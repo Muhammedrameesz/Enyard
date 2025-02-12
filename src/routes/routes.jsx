@@ -3,22 +3,33 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import OurTeam from "../pages/OurTeam";
+import TimeTick from "../pages/TimeTick";
+import Contact from "../pages/Contact";
 
 export const router = createBrowserRouter([
   {
-    element: <MainLayout />, 
+    element: <MainLayout />,
     children: [
       {
         path: "/",
-        element: <Home/> 
+        element: <Home />,
       },
       {
         path: "/about-us",
-        element: <About/> 
-      },{
-        path:"/our-team",
-        element:<OurTeam/>
+        element: <About />,
+      },
+      {
+        path: "/our-team",
+        element: <OurTeam />,
+      },
+      {
+        path: "/time-tick",
+        element: <TimeTick />,
+      },
+      {
+        path:"/contact-us",
+        element:<Contact/>
       }
-    ]
-  }
+    ],
+  },
 ]);

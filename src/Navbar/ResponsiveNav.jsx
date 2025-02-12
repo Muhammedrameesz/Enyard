@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MdClose, MdKeyboardArrowDown, MdMenu } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { navLinks, dropdownLinks } from "./navlinks.jsx";
-import EnyardLogo from "../assets/images/Enyard new.png"
-
+import EnyardLogo from "../assets/images/Enyard new.png";
 
 export default function ResponsiveNav() {
   const [hoverLink, setHoverLink] = useState("");
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -39,7 +39,7 @@ export default function ResponsiveNav() {
             >
               {/* Close Button */}
               <div className="flex justify-between items-center mb-6">
-                <img src={EnyardLogo} alt=""  className="w-32"/>
+                <img src={EnyardLogo} alt="" className="w-32" />
                 <button onClick={() => setDrawerOpen(false)}>
                   <MdClose size={30} />
                 </button>
@@ -96,7 +96,10 @@ export default function ResponsiveNav() {
 
                 {/* Buttons */}
                 <li>
-                  <button className="border w-full p-3 rounded-full border-gray-900 text-lg hover:bg-black hover:text-white transition">
+                  <button
+                    onClick={() => navigate("/contact-us")}
+                    className="border w-full p-3 rounded-full border-gray-900 text-lg hover:bg-black hover:text-white transition"
+                  >
                     Contact
                   </button>
                 </li>

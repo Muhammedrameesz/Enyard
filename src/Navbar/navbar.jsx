@@ -1,6 +1,6 @@
 import { navLinks, dropdownLinks } from "./navlinks.jsx";
 import EnyardLogo from "../assets/images/Enyard new.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -8,9 +8,11 @@ import { MdArrowRightAlt } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import ResponsiveNav from "./ResponsiveNav.jsx";
 
+
 export default function Navbar() {
   const [hoverLink, setHoverLink] = useState("");
   const [secondNavView, setSecondNavView] = useState(false);
+  const navigate =useNavigate()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,6 +57,7 @@ export default function Navbar() {
                     onMouseLeave={() => setHoverLink("")}
                   >
                     <Link
+                    to={item.hasDropdown ? "#" :item.path}
                       className={`flex items-center gap-1 ${
                         item.hasDropdown && "cursor-text"
                       }`}
@@ -112,13 +115,13 @@ export default function Navbar() {
                                       : null}
                                   </h1>
                                   <div>
-                                    <h1 className="text-start flex items-center gap-2 mb-1">
+                                    <h1 className="text-start flex items-center gap-0 mb-1">
                                       <span>{dropdownItem.element}</span>
-                                      <span className="transform group-hover:translate-x-2 transition-transform duration-300 text-gray-500">
+                                      <span className="transform group-hover:translate-x-1 transition-transform duration-300 text-gray-900">
                                         <MdKeyboardArrowRight />
                                       </span>
                                     </h1>
-                                    <p className="text-sm font-sans text-start text-gray-700 transition-colors duration-500">
+                                    <p className="text-sm font-sans text-start text-gray-500 transition-colors duration-500">
                                       {dropdownItem.des
                                         ? dropdownItem.des
                                         : null}
@@ -135,7 +138,9 @@ export default function Navbar() {
               </ul>
 
               <div className="hidden lg:flex">
-                <button className="border p-2 px-4 rounded-full ml-4 border-gray-900 text-lg hover:bg-black hover:text-white transition-colors duration-300">
+                <button
+                onClick={()=>navigate("/contact-us")} 
+                className="border p-2 px-4 rounded-full ml-4 border-gray-900 text-lg hover:bg-black hover:text-white transition-colors duration-300">
                   Contact
                 </button>
                 <button className="flex justify-center items-center gap-2 border p-2 px-4 rounded-full ml-4 bg-black text-white border-gray-900 text-lg hover:bg-red-600 hover:border-red-600 transition-colors duration-300">
@@ -153,7 +158,8 @@ export default function Navbar() {
           </motion.div>
         </AnimatePresence>
       )}
-
+      
+     {/* 2nd Section  */}
       <div
         style={{ zIndex: 1000 }}
         className={`p-3 py-5 font-lanze  bg-transparent  w-full`}
@@ -173,6 +179,7 @@ export default function Navbar() {
                 onMouseLeave={() => setHoverLink("")}
               >
                 <Link
+                  to={item.hasDropdown ? "#" :item.path}
                   className={`flex items-center gap-1 ${
                     item.hasDropdown && "cursor-text"
                   }`}
@@ -228,13 +235,13 @@ export default function Navbar() {
                                   {dropdownItem.icon ? dropdownItem.icon : null}
                                 </h1>
                                 <div>
-                                  <h1 className="text-start flex items-center gap-2 mb-1">
+                                  <h1 className="text-start flex items-center gap-0 mb-1">
                                     <span>{dropdownItem.element}</span>
-                                    <span className="transform group-hover:translate-x-2 transition-transform duration-300 text-gray-500">
+                                    <span className="transform group-hover:translate-x-1 transition-transform duration-300 text-gray-900">
                                       <MdKeyboardArrowRight />
                                     </span>
                                   </h1>
-                                  <p className="text-sm font-sans text-start text-gray-700 transition-colors duration-500">
+                                  <p className="text-sm font-sans text-start text-gray-500 transition-colors duration-500">
                                     {dropdownItem.des ? dropdownItem.des : null}
                                   </p>
                                 </div>
@@ -250,7 +257,9 @@ export default function Navbar() {
           </ul>
 
           <div className="hidden lg:flex">
-            <button className="border p-2 px-4 rounded-full ml-4 border-gray-900 text-lg hover:bg-black hover:text-white transition-colors duration-300">
+            <button 
+             onClick={()=>navigate("/contact-us")}
+             className="border p-2 px-4 rounded-full ml-4 border-gray-900 text-lg hover:bg-black hover:text-white transition-colors duration-300">
               Contact
             </button>
             <button className="flex justify-center items-center gap-2 border p-2 px-4 rounded-full ml-4 bg-black text-white border-gray-900 text-lg hover:bg-red-600 hover:border-red-600 transition-colors duration-300">

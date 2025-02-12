@@ -17,7 +17,7 @@ export default function Header() {
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 max-w-6xl xl:max-w-7xl mx-auto px-6 md:px-10">
         {/* Text Section */}
         <section className="flex flex-col gap-8 text-center md:text-left">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold uppercase ">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold uppercase ">
             Lorem ipsum dolor sit amet,{" "}
             <span className="text-red-500">consectetur</span> adipisicing elit.
           </h1>

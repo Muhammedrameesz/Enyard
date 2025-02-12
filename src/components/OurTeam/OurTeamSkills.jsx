@@ -60,18 +60,18 @@ function SkillCard({ percentage, title, delay }) {
 
   return (
     <motion.div
-      className="p-6 bg-gray-800  rounded-2xl shadow-lg"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      className="p-6  rounded-2xl "
+      // initial={{ opacity: 0, y: 20 }}
+      // whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false }}
-      transition={{ duration: 0.6, delay }}
+      transition={{ duration: 0.6, delay, }}
       onViewportEnter={() => setInView(true)} 
       onViewportLeave={() => setInView(false)} 
     >
-      <motion.h1 className="text-4xl font-semibold text-white">
+      <motion.h1 className="text-5xl font-semibold text-gray-900">
         {count}%
       </motion.h1>
-      <h2 className="text-base font-medium text-gray-300 mt-2">{title}</h2>
+      <h2 className="text-base font-medium text-gray-600 mt-2">{title}</h2>
     </motion.div>
   );
 }
