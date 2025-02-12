@@ -93,10 +93,10 @@ export default function SquareCards() {
                   <h1
                     className={`text-gray-600 font-medium
                     ${
-                      i < 2
-                        ? "text-gray-600 group-hover:text-gray-50 transition-colors duration-300"
-                        : "text-gray-50"
-                    }
+                      i < 2 
+                        ? "text-gray-600 group-hover:text-gray-100 transition-colors duration-300"
+                        : "text-gray-100"
+                    }  
                     `}
                   >
                     {item.subtitle}
