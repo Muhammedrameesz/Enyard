@@ -22,7 +22,7 @@ export default function Header() {
             repeatType:'reverse',
            }}
           className="text-base flex items-center gap-2 text-red-600 font-medium leading-relaxed ">
-            <span><MdOutlineAccessTime/></span>Time Tick
+            <span><MdOutlineAccessTime/></span>Hosting
           </motion.p>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-7 ">
             Time To

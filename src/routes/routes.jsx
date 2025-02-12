@@ -23,7 +23,7 @@ export const router = createBrowserRouter([
         element: <OurTeam />,
       },
       {
-        path: "/time-tick",
+        path: "/hosting",
         element: <TimeTick />,
       },
       {
