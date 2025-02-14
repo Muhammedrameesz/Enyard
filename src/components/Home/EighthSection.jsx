@@ -1,4 +1,4 @@
-import imageSection3 from "../../assets/images/image-section-3.webp"
+import imageSection3 from "../../assets/images/image-section-3.webp";
 import { MdDone } from "react-icons/md";
 
 export default function EighthSection() {
@@ -8,11 +8,10 @@ export default function EighthSection() {
         <div className="flex flex-col gap-5">
           <p className="text-red-800 text-base"># No 1 Best Performance</p>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">
-            Manage Your Fleet of Devices From One Platform
+            Power Your Online Presence with Enyard&apos;s Premium Hosting
           </h1>
           <p className="text-base text-gray-600">
-            Duis gravida augue velit eu dignissim felis pos quis. Integ ante
-            urna gravida nec molestie mattis ultricies risus sed.
+            Fast, Secure, and Scalable Hosting Solutions
           </p>
 
           <div className="flex gap-4 mb-3 mt-3">
@@ -21,11 +20,12 @@ export default function EighthSection() {
             </h1>
             <div className="flex flex-col gap-2">
               <h1 className="text-lg font-semibold text-gray-900">
-                Enforce Passcode Policy
+                Reliability & Performance
               </h1>
               <p className="text-bse text-gray-600">
-                Duis gravida augue velit eu dignissim felis pos quis. Integ ante
-                urna gravida nec molestie mattis ultricies risus sed.
+                Experience unparalleled uptime and lightning-fast speeds with
+                Enyard&apos;s cutting-edge hosting infrastructure to ensure your
+                website loads quickly and reliably.
               </p>
             </div>
           </div>
@@ -36,11 +36,12 @@ export default function EighthSection() {
             </h1>
             <div className="flex flex-col gap-2">
               <h1 className="text-lg font-semibold text-gray-900">
-                Enforce Passcode Policy
+                Security & Protection
               </h1>
               <p className="text-base text-gray-600">
-                Duis gravida augue velit eu dignissim felis pos quis. Integ ante
-                urna gravida nec molestie mattis ultricies risus sed.
+                Your website&apos;s security is our top priority. We offer
+                advanced security features to safeguard your data and protect
+                your website from online threats.
               </p>
             </div>
           </div>
@@ -48,7 +49,7 @@ export default function EighthSection() {
 
         {/* IMAGE SECTION */}
         <div>
-            <img src={imageSection3} alt="image" className="w-full h-full"/>
+          <img src={imageSection3} alt="image" className="w-full h-full" />
         </div>
       </section>
     </div>
