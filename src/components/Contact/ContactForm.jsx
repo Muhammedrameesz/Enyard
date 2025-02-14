@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 import { CiInstagram } from "react-icons/ci";
 import { CiTwitter } from "react-icons/ci";
 
-
 const schema = yup.object().shape({
   firstName: yup
     .string()
@@ -51,14 +50,17 @@ export default function ContactForm() {
       <div className="fixed inset-0 w-full h-full bg-[#f0f7f9] -z-10" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 mx-auto px-6 md:px-6 max-w-6xl">
-       
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="bg-white p-10 rounded-3xl shadow-md flex flex-col gap-4  "
         >
-        <div className="flex flex-col gap-2 mb-2">
-          <h2 className="text-3xl font-semibold ">Need Any Help?</h2>
-          <p className="text-sm font-medium text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <div className="flex flex-col gap-2 mb-2">
+            <h2 className="text-3xl font-semibold ">Need Any Help?</h2>
+            <p className="text-sm font-medium text-gray-500">
+              {" "}
+              Please fill out the form below and we&apos;ll get back to you as
+              soon as possible.
+            </p>
           </div>
 
           <div className="flex flex-col md:flex-row gap-4">
@@ -140,7 +142,7 @@ export default function ContactForm() {
               animate={{ y: "0%" }}
               variants={{
                 hover: {
-                  y: ["0%", "100%", "-100%", "0%"],
+                  y: ["0%", "70%", "-70%", "0%"],
                   opacity: [1, 0, 0, 1],
                   transition: {
                     duration: 0.8,
@@ -167,10 +169,8 @@ export default function ContactForm() {
             Get In Touch With Us
           </h1>
           <p className="text-gray-500 font-medium text-sm max-w-lg ">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus,
-            possimus numquam atque modi mollitia, quasi nulla perferendis iusto
-            ea qui, tempore perspiciatis itaque maxime recusandae adipisci totam
-            consequuntur neque similique.
+            We&apos;re always happy to hear from you. You can also reach us through
+            the following platforms.
           </p>
 
           <div className="space-y-4 pt-6">
@@ -195,7 +195,6 @@ export default function ContactForm() {
                 example@instagram.com
               </a>
             </div>
-
 
             <div className="flex items-center space-x-3">
               <CiTwitter className="bg-white shadow-md rounded-full p-2 text-4xl text-black" />
@@ -227,8 +226,6 @@ export default function ContactForm() {
               </p>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>

@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { navLinks, dropdownLinks } from "./navlinks.jsx";
 import EnyardLogo from "../assets/images/Enyard new.png";
 
+
 export default function ResponsiveNav() {
   const [hoverLink, setHoverLink] = useState("");
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -39,7 +40,7 @@ export default function ResponsiveNav() {
             >
               {/* Close Button */}
               <div className="flex justify-between items-center mb-6">
-                <img src={EnyardLogo} alt="" className="w-32" />
+                <img  onClick={()=>navigate("/")} src={EnyardLogo} alt="" className="w-32" />
                 <button onClick={() => setDrawerOpen(false)}>
                   <MdClose size={30} />
                 </button>
@@ -71,7 +72,7 @@ export default function ResponsiveNav() {
                           animate={{ height: "auto", opacity: 1 }}
                           exit={{ height: 0, opacity: 0 }}
                           transition={{ duration: 0.3 }}
-                          className="mt-2 bg-gray-100 rounded-lg p-2 space-y-2"
+                          className="mt-2 bg-white rounded-lg p-2 space-y-2"
                         >
                           {dropdownLinks
                             .filter(
@@ -82,9 +83,10 @@ export default function ResponsiveNav() {
                               <Link
                                 to={dropdownItem.path}
                                 key={dropdownIndex}
-                                className="block p-2 hover:bg-gray-200 rounded transition text-lg font-medium"
+                                className="p-2 flex items-center gap-3 hover:bg-gray-200 rounded transition text-lg font-medium"
                                 onClick={() => setDrawerOpen(false)}
                               >
+                                {dropdownItem.icon}
                                 {dropdownItem.element}
                               </Link>
                             ))}

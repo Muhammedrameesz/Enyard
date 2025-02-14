@@ -1,29 +1,32 @@
-import { FaRegSmile, FaRegHeart, FaRegStar } from "react-icons/fa";
+import { FaRegStar, FaRegLightbulb, FaRegSmile } from "react-icons/fa";
 import SubtractImage from "../../assets/images/Subtract.webp";
 import OrangeDott from "../../ui/OrangeDott";
 
 export default function OurFeatures() {
   const dummyArray = [
     {
-      title: "Happiness",
-      description: "Quisque gravida molestie venen. Maecenas commodo aliq.",
-      icon: <FaRegSmile />,
-    },
-    {
-      title: "Passion",
-      description: "Quisque gravida molestie venen. Maecenas commodo aliq.",
-      icon: <FaRegHeart />,
+      title: "Innovation",
+      description:
+        "We are committed to provide innovative IT solutions that meets clients requirements.",
+      icon: <FaRegLightbulb />,
     },
     {
       title: "Excellence",
-      description: "Quisque gravida molestie venen. Maecenas commodo aliq.",
+      description:
+        "Our team of talented professionals provide excellent business solutions.",
       icon: <FaRegStar />,
+    },
+    {
+      title: "Customer Satisfaction.",
+      description:
+        "We are dedicated to providing exceptional customer support throughout the journey.",
+      icon: <FaRegSmile />,
     },
   ];
 
   return (
     <div className="py-20 font-jakarta relative bg-red-50 ">
-        <OrangeDott/>
+      <OrangeDott />
       <div
         className="absolute inset-0 z-0 bg-no-repeat bg-center overflow-hidden "
         style={{
@@ -46,10 +49,8 @@ export default function OurFeatures() {
                 {item.icon}
               </div>
               <section className="flex flex-col gap-2">
-                <h1 className=" text-xl  font-semibold ">
-                  {item.title}
-                </h1>
-                <p className="text-gray-600 text-lg ">
+                <h1 className=" text-xl  font-semibold ">{item.title}</h1>
+                <p className="text-gray-600 text-base font-medium ">
                   {item.description}
                 </p>
               </section>
@@ -62,47 +63,37 @@ export default function OurFeatures() {
             Our Features
           </h1>
           <h1 className=" text-3xl sm:text-4xl md:text-5xl text-gray-900 font-semibold mb-5">
-            Lorem Ipsum Dolor Sit <span className="text-red-500">Amet</span>{" "}
-            Consectetur{" "}
+            Powering Your <span className="text-red-500">Business </span>Growth
           </h1>
           <p className="text-lg text-gray-600 font-jakarta mb-6">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex
-            perspiciatis enim rerum soluta tempora quasi ut rem impedit quo
-            atque vel, neque ad debitis cupiditate optio nihil placeat
-            repudiandae illum.
+            From secure and scalable hosting to a comprehensive enterprise
+            resource planning system, we offer the tools you need to streamline
+            operations, enhance productivity, and achieve your business goals.
           </p>
 
           <div className="flex gap-5 items-center font-semibold text-gray-900 mb-5">
             <h1 className="text-xl p-1  px-4 border border-dashed border-red-500 text-red-500 rounded-full">
               1
             </h1>
-            <h1 className="text-lg">
-            Keep Your All Data Protected
-            </h1>
+            <h1 className="text-lg">High-Performance Hosting</h1>
           </div>
           <div className="flex gap-5 items-center font-semibold text-gray-900 mb-5">
             <h1 className="text-xl p-1  px-3 border border-dashed border-red-500 text-red-500 rounded-full">
               2
             </h1>
-            <h1 className="text-lg">
-            Keep Your All Data Protected
-            </h1>
+            <h1 className="text-lg">CoreX ERP Integration & Customization</h1>
           </div>
           <div className="flex gap-5 items-center font-semibold text-gray-900 mb-5">
             <h1 className="text-xl p-1  px-3 border border-dashed border-red-500 text-red-500 rounded-full">
               3
             </h1>
-            <h1 className="text-lg">
-            Keep Your All Data Protected
-            </h1>
+            <h1 className="text-lg">24/7 Expert Support</h1>
           </div>
           <div className="flex gap-5 items-center font-semibold text-gray-900 mb-5">
             <h1 className="text-xl p-1  px-3 border border-dashed border-red-500 text-red-500 rounded-full">
               4
             </h1>
-            <h1 className="text-lg">
-            Keep Your All Data Protected
-            </h1>
+            <h1 className="text-lg">Robust Security & Data Protection</h1>
           </div>
         </div>
       </section>

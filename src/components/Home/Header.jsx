@@ -6,25 +6,22 @@ export default function Header() {
   return (
     <div className="pt-16 pb-10 font-jakarta ">
       <div
-        className="absolute w-full inset-0 bg-no-repeat bg-center -z-10 bg-cover"
-        style={{
-          backgroundImage: `url(${Bgimage})`,
-          minHeight: "140vh",
-          width: "100%",
-        }}
+        className="fixed w-full inset-0  -z-10 h-full bg-gradient-to-br from-gray-300 via-white to-white"
+        
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 max-w-6xl xl:max-w-7xl mx-auto px-6 md:px-10">
         {/* Text Section */}
         <section className="flex flex-col gap-8 text-center md:text-left">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold uppercase ">
-            Lorem ipsum dolor sit amet,{" "}
-            <span className="text-red-500">consectetur</span> adipisicing elit.
+            INNOVATIVE IT SOLUTIONS FOR YOUR,{" "}
+            <span className="text-red-500">BUSINESS</span> EMPOWERMENT.
           </h1>
           <p className="text-lg sm:text-xl  text-gray-700 leading-relaxed ">
-            Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing
-            elit. Possimus voluptate dolore optio obcaecati quaerat sit ipsam
-            quisquam eum quas.
+            With a focus on innovation and customer satisfaction, we offer a
+            comprehensive suite of services, including our flagship CoreX ERP
+            software and dependable hosting solutions. We&apos;re committed to
+            empowering your business through technology.
           </p>
           <div>
             <button className="text-lg group font-semibold border border-black py-3 px-8 rounded-full  transition-colors duration-300 bg-black text-white">

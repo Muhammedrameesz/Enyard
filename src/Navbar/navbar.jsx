@@ -14,6 +14,11 @@ export default function Navbar() {
   const [secondNavView, setSecondNavView] = useState(false);
   const navigate =useNavigate()
 
+  const handleNavigate = ()=>{
+     
+      navigate("/contact-us")
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 170) {
@@ -44,6 +49,7 @@ export default function Navbar() {
           >
             <section className="flex items-center justify-around gap-4">
               <img
+                onClick={()=>navigate("/")}
                 src={EnyardLogo}
                 alt="Enyard Logo"
                 className="w-[130px] sm:w-[150px] md:w-[170px] h-full object-cover cursor-pointer"
@@ -104,7 +110,7 @@ export default function Navbar() {
                                   className="group flex items-center gap-5 p-2 group transition-colors duration-500"
                                 >
                                   <h1
-                                    className={`text-white rounded-full p-3 transition-colors duration-500 text-2xl 
+                                    className={`text-white rounded-xl rounded-br-none p-3 transition-colors duration-500 text-2xl 
                                 ${dropdownIndex === 0 && " bg-green-400"} ${
                                       dropdownIndex === 1 && " bg-blue-400"
                                     } ${dropdownIndex === 2 && " bg-black"}
@@ -139,7 +145,7 @@ export default function Navbar() {
 
               <div className="hidden lg:flex">
                 <button
-                onClick={()=>navigate("/contact-us")} 
+                onClick={handleNavigate} 
                 className="border p-2 px-4 rounded-full ml-4 border-gray-900 text-lg hover:bg-black hover:text-white transition-colors duration-300">
                   Contact
                 </button>
@@ -166,6 +172,7 @@ export default function Navbar() {
       >
         <section className="flex items-center justify-around gap-4  ">
           <img
+           onClick={()=>navigate("/")}
             src={EnyardLogo}
             alt="Enyard Logo"
             className="w-[130px] sm:w-[150px] md:w-[170px] h-full object-cover cursor-pointer"
@@ -226,7 +233,7 @@ export default function Navbar() {
                                 className="group flex items-center gap-5 p-2 group transition-colors duration-500 "
                               >
                                 <h1
-                                  className={`text-white rounded-full p-3 transition-colors duration-500 text-2xl 
+                                  className={`text-white rounded-xl rounded-br-none p-3 transition-colors duration-500 text-2xl 
                                ${dropdownIndex === 0 && " bg-green-400"} ${
                                     dropdownIndex === 1 && " bg-blue-400"
                                   } ${dropdownIndex === 2 && " bg-black"}
@@ -258,7 +265,7 @@ export default function Navbar() {
 
           <div className="hidden lg:flex">
             <button 
-             onClick={()=>navigate("/contact-us")}
+             onClick={handleNavigate}
              className="border p-2 px-4 rounded-full ml-4 border-gray-900 text-lg hover:bg-black hover:text-white transition-colors duration-300">
               Contact
             </button>

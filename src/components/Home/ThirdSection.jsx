@@ -21,13 +21,11 @@ export default function ThirdSection() {
             <h1 className="tracking-tight">Rated Apps</h1>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl leading-relaxed font-semibold text-gray-900">
-            Why <span className="text-red-500">1300k</span> Customer Installed
-            Our App.
+          Why  Choose <span className="text-red-500">Enyard ?</span> 
+            
           </h1>
           <p className="text-lg sm:text-xl  text-gray-700 leading-relaxed">
-            Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing
-            elit. Possimus voluptate dolore optio obcaecati quaerat sit ipsam
-            quisquam eum quas.
+          We provide innovative and reliable <span className="font-semibold">IT solutions </span> that empower businesses to achieve their full potential.
           </p>
           <div>
           </div>

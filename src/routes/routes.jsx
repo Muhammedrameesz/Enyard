@@ -5,6 +5,7 @@ import About from "../pages/About";
 import OurTeam from "../pages/OurTeam";
 import TimeTick from "../pages/TimeTick";
 import Contact from "../pages/Contact";
+import Corex from "../pages/Corex";
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
       {
         path:"/contact-us",
         element:<Contact/>
+      },
+      {
+        path:"/CoreX-ERP",
+        element:<Corex/>
       }
     ],
   },

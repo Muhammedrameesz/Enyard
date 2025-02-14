@@ -48,6 +48,16 @@ export default {
         decent:'rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset',
         custom2: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
         },
+        colors: {
+          primary: "#1E40AF",
+          secondary: "#9333EA",
+          accent: "#F97316",
+          dark: "#1E293B",
+          light: "#F1F5F9",
+          customBlue:"#141b33",
+          mediumCustomBlue:"#153652",
+          darkBlue:"#16223d"
+        },
       
     },
   },

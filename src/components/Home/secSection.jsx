@@ -10,11 +10,11 @@ export default function secSection() {
                 1
               </span>
             </h1>
-            <h1 className="text-xl font-semibold">download the apps </h1>
+            <h1 className="text-xl font-semibold">More Efficiency
+            </h1>
           </div>
-          <p className="text-lg">
-            Integer luctus dolor rutrum nibh interdum iaculis euismod ante
-            conseqt. Proin eget.
+          <p className="text-base">
+          Automate tedious tasks and boost productivity with our intuitive software solutions.
           </p>
         </div>
 
@@ -26,11 +26,10 @@ export default function secSection() {
                 2
               </span>
             </h1>
-            <h1 className="text-xl font-semibold">download the apps </h1>
+            <h1 className="text-xl font-semibold">Enhance Team Collaboration</h1>
           </div>
-          <p className=" text-lg">
-            Integer luctus dolor rutrum nibh interdum iaculis euismod ante
-            conseqt. Proin eget.
+          <p className=" text-base">
+          Connect your team seamlessly and foster effective communication with our integrated platform.
           </p>
         </div>
 
@@ -43,11 +42,10 @@ export default function secSection() {
                 3
               </span>
             </h1>
-            <h1 className="text-xl font-semibold ">download the apps </h1>
+            <h1 className="text-xl font-semibold ">Grow Your Business</h1>
           </div>
-          <p className="text-lg ">
-            Integer luctus dolor rutrum nibh interdum iaculis euismod ante
-            conseqt. Proin eget.
+          <p className="text-base ">
+          Our Flexible and Scalable solutions adapt to your evolving needs,ensuring long-term growth and success.
           </p>
         </div>
       </section>

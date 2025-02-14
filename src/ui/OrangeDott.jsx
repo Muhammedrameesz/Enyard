@@ -6,13 +6,13 @@ export default function OrangeDott() {
     <motion.div className="absolute top-20 left-1/2 transform -translate-x-1/2">
     <motion.div
       animate={{
-        x: [0, 10, 20, 10, 0, -10, -20, -10, 0], // Circular x-coordinates
-        y: [0, 10, 0, -10, -20, -10, 0, 10, 0], // Circular y-coordinates
+        x: [0, 10, 20, 10, 0, -10, -20, -10, 0], 
+        y: [0, 10, 0, -10, -20, -10, 0, 10, 0], 
       }}
       transition={{
-        repeat: Infinity, // Infinite loop
-        duration: 10, // Duration for one full rotation
-        ease: "linear", // Smooth and constant speed
+        repeat: Infinity, 
+        duration: 10, 
+        ease: "linear", 
       }}
       className="w-[12px] h-[12px] rounded-full bg-orange-500"
     ></motion.div>
