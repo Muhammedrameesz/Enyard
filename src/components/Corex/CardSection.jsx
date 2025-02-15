@@ -52,7 +52,7 @@ export default function CardSection() {
           </h1>
           <div className="bg-gray-100 h-[1px] w-[100%]" />
 
-          <button className="text-base font-semibold w-fit group">
+          <button className="text-base font-semibold w-fit group text-gray-900">
             Read More{" "}
             <MdArrowOutward className="inline-block text-xl transform group-hover:translate-x-1 transition-transform duration-300" />
           </button>
@@ -76,7 +76,7 @@ export default function CardSection() {
             </h1>
             <div className="bg-gray-200 h-[1px] w-[100%]" />
 
-            <button className="text-base font-semibold w-fit group">
+            <button className="text-base font-semibold w-fit group text-gray-900">
               Read More{" "}
               <MdArrowOutward className="inline-block text-xl transform group-hover:translate-x-1 transition-transform duration-300" />
             </button>

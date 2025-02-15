@@ -124,7 +124,7 @@ export default function SecSection() {
                 `}
           >
             <h1 className={`${iconColors[i]} text-5xl`}>{item.icon}</h1>
-            <h1 className="text-lg font-semibold">{item.title}</h1>
+            <h1 className="text-lg font-semibold text-gray-900">{item.title}</h1>
             <p className="text-sm text-gray-600 font-medium">
               {item.description}
             </p>

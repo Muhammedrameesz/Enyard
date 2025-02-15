@@ -60,13 +60,17 @@ export default function OurFeatures2() {
 
         {/* SECOND COLUMN */}
 
-        <div className="relative flex flex-col justify-center  p-8 rounded-3xl gap-5 min-h-[450px]">
-          <div
-            className="absolute inset-0 w-full h-full bg-no-repeat bg-cover bg-center rounded-3xl -z-10 bg-black"
+        <div className="relative flex flex-col justify-center bg-no-repeat bg-center bg-cover  p-8 rounded-3xl gap-5 min-h-[450px]"
+        style={{
+          backgroundImage:`url(${FeaturesBoxImage})`
+        }}
+              >
+          {/* <div
+            className="absolute inset-0 rounded-3xl -z-10  bg-black"
             // style={{
             //   backgroundImage: `url(${FeaturesBoxImage})`,
             // }}
-          ></div>
+          ></div> */}
 
           <h1 className="relative h-20 w-20 rounded-full bg-neutral-800">
             <span className="absolute top-0 right-0 trnasform translate-x-1/3 translate-y-1/3 text-yellow-600 text-5xl ">
@@ -87,7 +91,7 @@ export default function OurFeatures2() {
             className="w-fit text-base font-semibold text-white group"
           >
             Learn More
-            <IoIosArrowRoundForward className="inline-block ml-1 text-xl transform group-hover:translate-x-2 transition-transform duration-500" />
+            <IoIosArrowRoundForward className="inline-block text-white ml-1 text-xl transform group-hover:translate-x-2 transition-transform duration-500" />
           </button>
         </div>
 

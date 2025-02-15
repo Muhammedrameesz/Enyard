@@ -21,7 +21,7 @@ export default function ExprtiseSection() {
           <h1 className="text-gray-900 text-3xl md:text-4xl font-semibold">
             Know Our Expert Team They Develop Data Encrypted
           </h1>
-          <p>
+          <p className="text-gray-700">
             Suspendisse sed lacus ornare pretium neque nec ornare lacus. In non
             eros augue dapibus quam Maecenas lacini varius convall.
           </p>

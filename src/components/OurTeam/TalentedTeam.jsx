@@ -125,7 +125,7 @@ export default function TalentedTeam() {
                 <span className="text-2xl text-red-400">
                   <MdOutlinePhoneInTalk />
                 </span>
-                <span className="text-sm font-medium ">Call Now:</span>
+                <span className="text-sm font-medium text-gray-950 ">Call Now:</span>
                 <span className="ml-1 text-sm text-gray-600">
                   {item.contact}
                 </span>
@@ -135,7 +135,7 @@ export default function TalentedTeam() {
                 <span className="text-xl text-red-400">
                   <TfiEmail />
                 </span>
-                <span className="text-sm font-medium ">Mail Now:</span>
+                <span className="text-sm font-medium text-gray-950">Mail Now:</span>
                 <span className="ml-1 text-sm text-gray-600">{item.email}</span>
               </h1>
 
@@ -143,7 +143,7 @@ export default function TalentedTeam() {
                 <span className="text-2xl text-red-400">
                   <IoShareSocialOutline />
                 </span>
-                <span className="text-base font-medium ">Follow us:</span>
+                <span className="text-sm font-medium text-gray-950 ">Follow us:</span>
                 <div className="flex gap-3 ml-1 text-red-500">
                   <a href={item.social.facebook}>
                     <FaFacebookF />
@@ -160,7 +160,7 @@ export default function TalentedTeam() {
 
             <section className="flex flex-col gap-5">
               {item.knowledge.map((data, i) => (
-                <div key={i}>
+                <div key={i} className="text-gray-950">
                   {/* Skill and Percentage in a row */}
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-start text-sm font-medium">

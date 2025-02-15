@@ -33,13 +33,13 @@ export default function forthSection() {
             </span>{" "}
             Company At The Forefront Of Risk Intelligence
           </h1>
-          <p className="text-base mb-5">
+          <p className="text-base mb-5 text-gray-600">
             Perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
             inventore veritatis et quasi architecto.
           </p>
 
-          <section className="grid grid-cols-1 md:grid-cols-2  ">
+          <section className="grid grid-cols-1 md:grid-cols-2 text-gray-900">
             {/* 1st column */}
             <div className="flex flex-col gap-7">
               <h1 className="flex  gap-2">

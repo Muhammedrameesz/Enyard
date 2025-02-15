@@ -36,12 +36,12 @@ export default function forthSection() {
             </span>{" "}
             Risk Analytics
           </h1>
-          <p className="text-base mb-5">
+          <p className="text-base mb-5 text-gray-600">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration by injecter.
           </p>
 
-          <section className="grid grid-cols-1 md:grid-cols-2  ">
+          <section className="grid grid-cols-1 md:grid-cols-2  text-gray-900 ">
             {/* 1st column */}
             <div className="flex flex-col gap-7">
               <h1 className="flex  gap-2">

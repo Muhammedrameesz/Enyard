@@ -82,7 +82,7 @@ export default function ExperienceSection() {
               />
               <div className="flex flex-col gap-3">
                 <h1 className="text-red-500 font-semibold">{step.ref}</h1>
-                <h2 className="text-xl font-semibold ">{step.title}</h2>
+                <h2 className="text-xl font-semibold text-gray-950 ">{step.title}</h2>
                 <p className="text-gray-600">{step.description}</p>
               </div>
             </div>

@@ -28,7 +28,7 @@ export default function Accordian() {
           >
             <input type="radio" name="my-accordion-3" defaultChecked />
             <div
-              className={`collapse-title text-lg font-semibold p-4   ${
+              className={`collapse-title text-lg font-semibold p-4 text-gray-950  ${
                 activeA === "ac1" && "bg-gray-700 text-white mb-5"
               }`}
             >
@@ -49,7 +49,7 @@ export default function Accordian() {
           >
             <input type="radio" name="my-accordion-3" />
             <div
-              className={`collapse-title text-lg font-semibold p-4   ${
+              className={`collapse-title text-lg font-semibold p-4  text-gray-950 ${
                 activeA === "ac2" && "bg-gray-700 text-white mb-5"
               }`}
             >
@@ -71,7 +71,7 @@ export default function Accordian() {
           >
             <input type="radio" name="my-accordion-3" />
             <div
-              className={`collapse-title text-lg font-semibold p-4   ${
+              className={`collapse-title text-lg font-semibold p-4 text-gray-950  ${
                 activeA === "ac3" && "bg-gray-700 text-white mb-5"
               }`}
             >

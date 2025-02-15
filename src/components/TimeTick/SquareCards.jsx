@@ -30,7 +30,7 @@ export default function SquareCards() {
           backgroundImage: `url(${image})`,
         }}
       />
-      <div className="flex flex-col justify-center items-center text-center gap-2 px-6 md:px-10 mx-auto max-w-4xl mb-10">
+      <div className="flex flex-col justify-center text-gray-900 items-center text-center gap-2 px-6 md:px-10 mx-auto max-w-4xl mb-10">
         <h1 className="text-3xl md:text-4xl font-semibold">
           Gain A{" "}
           <span className="relative inline-block">
@@ -94,8 +94,8 @@ export default function SquareCards() {
                     className={`text-gray-600 font-medium
                     ${
                       i < 2 
-                        ? "text-gray-600 group-hover:text-gray-50 transition-colors duration-300"
-                        : "text-gray-50"
+                        ? "text-gray-600 group-hover:text-white transition-colors duration-300"
+                        : "text-white"
                     }  
                     `}
                   >

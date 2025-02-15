@@ -60,7 +60,7 @@ export default function OurTeam() {
               {item.designation}
             </motion.p>
             <motion.p
-              className="text-gray-600 font-medium absolute left-0 -bottom-6"
+              className="text-gray-600 font-medium absolute left-10 md:left-0 -bottom-6"
               initial={{ opacity: 0, y: 30 }}
               animate={{
                 opacity: textHover === i ? 1 : 0,

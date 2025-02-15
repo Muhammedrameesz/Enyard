@@ -24,7 +24,7 @@ export default function Header() {
           className="text-base flex items-center gap-2 text-red-600 font-medium leading-relaxed ">
             <span><MdOutlineAccessTime/></span>Hosting
           </motion.p>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-7 ">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-7 text-gray-950 ">
             Time To
             <span className="ml-1 text-transparent bg-clip-text bg-gradient-to-bl from-blue-500 via-purple-500 to-red-500 ">
               Track
@@ -40,7 +40,7 @@ export default function Header() {
           </p>
 
 
-          <section className="grid grid-cols-1 md:grid-cols-2 gap-5 ">
+          <section className="grid grid-cols-1 md:grid-cols-2 gap-5 text-gray-950">
             {/* 1st column */}
             <div className="flex flex-col gap-7">
               <h1 className="flex  gap-2">

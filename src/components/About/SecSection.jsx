@@ -53,7 +53,7 @@ function FeaturesSection() {
               >
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+              <h3 className="text-xl font-semibold mb-2 text-gray-950">{feature.title}</h3>
             </div>
             <p className="text-gray-600">{feature.description}</p>
           </div>
