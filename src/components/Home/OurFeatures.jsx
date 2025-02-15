@@ -42,7 +42,7 @@ export default function OurFeatures() {
               className="flex items-center gap-5 bg-white p-10 rounded-3xl  z-10"
             >
               <div
-                className={`text-3xl rounded-full  p-4 ${
+                className={`text-3xl rounded-full text-gray-900  p-4 ${
                   i == 0 && "bg-red-100"
                 } ${i == 1 && "bg-green-100"} ${i == 2 && "bg-yellow-100"}`}
               >

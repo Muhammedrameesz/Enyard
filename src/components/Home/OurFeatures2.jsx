@@ -42,7 +42,7 @@ export default function OurFeatures2() {
               <BsGraphUpArrow />
             </span>
           </h1>
-          <h1 className="text-xl font-semibold text-gray-950">Increase Productivity</h1>
+          <h1 className="text-xl font-semibold text-gray-900">Increase Productivity</h1>
           <p className="text-base text-gray-600">
             Streamline operations, boost productivity, and drive growth with
             CoreX. Our comprehensive solution integrates all your key business
@@ -63,9 +63,9 @@ export default function OurFeatures2() {
         <div className="relative flex flex-col justify-center  p-8 rounded-3xl gap-5 min-h-[450px]">
           <div
             className="absolute inset-0 w-full h-full bg-no-repeat bg-cover bg-center rounded-3xl -z-10 bg-black"
-            style={{
-              backgroundImage: `url(${FeaturesBoxImage})`,
-            }}
+            // style={{
+            //   backgroundImage: `url(${FeaturesBoxImage})`,
+            // }}
           ></div>
 
           <h1 className="relative h-20 w-20 rounded-full bg-neutral-800">
@@ -73,7 +73,7 @@ export default function OurFeatures2() {
               <IoCubeOutline />
             </span>
           </h1>
-          <h1 className="text-xl font-semibold text-white">
+          <h1 className="text-xl font-semibold text-white ">
             Seamless Integration
           </h1>
           <p className="text-base text-white">
@@ -99,7 +99,7 @@ export default function OurFeatures2() {
               <IoBarChartOutline />
             </span>
           </h1>
-          <h1 className="text-xl font-semibold">Effortless Scalability</h1>
+          <h1 className="text-xl font-semibold text-gray-900">Effortless Scalability</h1>
           <p className="text-base text-gray-600">
             Whether you&apos;re a growing startup or an established enterprise, CoreX
             adapts to your unique needs. Our flexible and scalable solution can
