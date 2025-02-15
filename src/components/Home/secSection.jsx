@@ -1,7 +1,7 @@
 export default function secSection() {
   return (
-    <div className="font-jakarta bg-white pt-16 pb-10 text-xl">
-      <section className="grid grid-cols-1 md:grid-cols-3 items-center gap-10 max-w-6xl xl:max-w-7xl mx-auto px-6 md:px-10">
+    <div className="font-jakarta bg-white pt-16 pb-10 text-xl ">
+      <section className="grid grid-cols-1 text-gray-950 md:grid-cols-3 items-center gap-10 max-w-6xl xl:max-w-7xl mx-auto px-6 md:px-10">
 
         <div className="flex flex-col gap-5 p-2 rounded-3xl bg-gradient-to-tl ">
           <div className="flex gap-5 items-end">

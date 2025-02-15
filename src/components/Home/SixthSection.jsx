@@ -36,7 +36,7 @@ export default function SixthSection() {
         </div>
         <p className="text-lg text-white mb-6">Reach out to our team</p>
 
-        <div onClick={handleClick} className="flex items-center justify-center gap-2 text-white cursor-pointer p-2 px-6 rounded-full border border-[#3498db] shadow-md bg-gradient-to-r from-[#22324e] to-[#3498db] hover:translate-x-1 transition-transform duration-300">
+        <div onClick={handleClick} className="flex items-center justify-center gap-2 text-white cursor-pointer p-2 px-6 rounded-full border  shadow-md  hover:translate-x-1 transition-transform duration-300">
           <h1 className="text-lg font-medium tracking-wide">Contact Us</h1>
           <h1 className="text-xl">
             <IoIosArrowForward />

@@ -8,7 +8,7 @@ export default function EighthSection() {
         <div className="flex flex-col gap-5">
           <p className="text-red-800 text-base"># No 1 Best Performance</p>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">
-            Power Your Online Presence with Enyard&apos;s Premium Hosting
+            Power Your Online Presence with <span className="text-red-500">Enyard</span>&apos;s Premium Hosting
           </h1>
           <p className="text-base text-gray-600">
             Fast, Secure, and Scalable Hosting Solutions

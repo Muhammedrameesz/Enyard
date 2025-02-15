@@ -49,7 +49,7 @@ export default function OurFeatures() {
                 {item.icon}
               </div>
               <section className="flex flex-col gap-2">
-                <h1 className=" text-xl  font-semibold ">{item.title}</h1>
+                <h1 className=" text-xl  font-semibold text-gray-950">{item.title}</h1>
                 <p className="text-gray-600 text-base font-medium ">
                   {item.description}
                 </p>

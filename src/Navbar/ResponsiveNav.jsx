@@ -11,9 +11,14 @@ export default function ResponsiveNav() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const navigate = useNavigate();
 
+  const handleClick = ()=>{
+    setDrawerOpen(false)
+    navigate("/contact-us")
+  }
+
   return (
     <>
-      <div className="absolute top-2 right-4 p-4 font-jakarta">
+      <div className="absolute top-2 right-4 p-4 font-jakarta text-gray-950">
         <button onClick={() => setDrawerOpen(true)} className="cursor-pointer">
           <MdMenu size={30} />
         </button>
@@ -83,7 +88,7 @@ export default function ResponsiveNav() {
                               <Link
                                 to={dropdownItem.path}
                                 key={dropdownIndex}
-                                className="p-2 flex items-center gap-3 hover:bg-gray-200 rounded transition text-lg font-medium"
+                                className="p-2 flex items-center gap-3 hover:bg-gray-200 rounded transition text-lg text-gray-800 font-medium"
                                 onClick={() => setDrawerOpen(false)}
                               >
                                 {dropdownItem.icon}
@@ -99,7 +104,7 @@ export default function ResponsiveNav() {
                 {/* Buttons */}
                 <li>
                   <button
-                    onClick={() => navigate("/contact-us")}
+                    onClick={handleClick}
                     className="border w-full p-3 rounded-full border-gray-900 text-lg hover:bg-black hover:text-white transition"
                   >
                     Contact

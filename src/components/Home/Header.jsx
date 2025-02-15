@@ -1,5 +1,5 @@
 import Mobiledevice from "../../assets/images/mobile-device-banner2.png";
-import Bgimage from "../../assets/images/Mobile-Device-Banner-Background.webp";
+// import Bgimage from "../../assets/images/Mobile-Device-Banner-Background.webp";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 export default function Header() {
@@ -13,7 +13,7 @@ export default function Header() {
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 max-w-6xl xl:max-w-7xl mx-auto px-6 md:px-10">
         {/* Text Section */}
         <section className="flex flex-col gap-8 text-center md:text-left">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold uppercase ">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold uppercase text-gray-950 ">
             INNOVATIVE IT SOLUTIONS FOR YOUR,{" "}
             <span className="text-red-500">BUSINESS</span> EMPOWERMENT.
           </h1>
@@ -25,7 +25,7 @@ export default function Header() {
           </p>
           <div>
             <button className="text-lg group font-semibold border border-black py-3 px-8 rounded-full  transition-colors duration-300 bg-black text-white">
-              Learn More
+            Explore More
               <MdKeyboardArrowRight className="transform group-hover:translate-x-1 transition-transform duration-500  inline-block ml-2" />
             </button>
           </div>

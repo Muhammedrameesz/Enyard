@@ -42,7 +42,7 @@ export default function OurFeatures2() {
               <BsGraphUpArrow />
             </span>
           </h1>
-          <h1 className="text-xl font-semibold">Increase Productivity</h1>
+          <h1 className="text-xl font-semibold text-gray-950">Increase Productivity</h1>
           <p className="text-base text-gray-600">
             Streamline operations, boost productivity, and drive growth with
             CoreX. Our comprehensive solution integrates all your key business
@@ -62,7 +62,7 @@ export default function OurFeatures2() {
 
         <div className="relative flex flex-col justify-center  p-8 rounded-3xl gap-5 min-h-[450px]">
           <div
-            className="absolute inset-0 w-full h-full bg-no-repeat bg-cover bg-center rounded-3xl -z-10"
+            className="absolute inset-0 w-full h-full bg-no-repeat bg-cover bg-center rounded-3xl -z-10 bg-black"
             style={{
               backgroundImage: `url(${FeaturesBoxImage})`,
             }}

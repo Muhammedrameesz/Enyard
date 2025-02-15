@@ -45,7 +45,7 @@ export default function Navbar() {
               ease: [0.4, 0, 0.2, 1],
             }}
             style={{ zIndex: 1000 }}
-            className="p-3 py-5 font-lanze bg-white shadow-normal fixed w-screen"
+            className="p-3 py-5 font-lanze bg-white shadow-normal fixed w-screen text-gray-950"
           >
             <section className="flex items-center justify-around gap-4">
               <img
@@ -168,7 +168,7 @@ export default function Navbar() {
      {/* 2nd Section  */}
       <div
         style={{ zIndex: 1000 }}
-        className={`p-3 py-5 font-lanze  bg-transparent  w-full`}
+        className={`p-3 py-5 font-lanze  bg-transparent  w-full text-gray-950`}
       >
         <section className="flex items-center justify-around gap-4  ">
           <img
