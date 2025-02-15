@@ -27,9 +27,9 @@ export default function CardSection() {
 
   return (
     <div className="font-jakarta py-10 bg-white space-y-10">
-      <div className="grid grid-cols-1 md:grid-cols-3 px-6 md:px-10 mx-auto max-w-6xl gap-7  ">
+      <div className="grid grid-cols-1 md:grid-cols-3  px-6 md:px-10 mx-auto max-w-6xl gap-7  ">
         <section
-          className="flex flex-col justify-center items-center text-center gap-5 col-span-2 
+          className="flex flex-col justify-center items-center text-center gap-5 col-span-1 md:col-span-2 
         bg-gradient-to-br from-customBlue via-customBlue to-mediumCustomBlue py-16  text-white rounded-3xl"
         >
           <h1 className="text-transparent uppercase bg-clip-text bg-gradient-to-tr text-lg font-semibold from-orange-500 to-white">
@@ -39,7 +39,7 @@ export default function CardSection() {
           <h1 className="text-4xl font-bold">Management</h1>
         </section>
 
-        <section className="flex flex-col justify-center bg-white shadow-custom rounded-3xl space-y-6 p-8">
+        <section className="flex flex-col justify-center bg-white shadow-custom rounded-3xl space-y-5 p-8">
           <div className="flex gap-5 items-center  ">
             <TiMessages className="text-4xl text-yellow-500" />
             <h1 className="text-xl font-semibold text-gray-900">
@@ -83,7 +83,6 @@ export default function CardSection() {
           </section>
         ))}
       </div>
-   
     </div>
   );
 }

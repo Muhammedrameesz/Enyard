@@ -7,6 +7,8 @@ import { GrLocation } from "react-icons/gr";
 import { motion } from "framer-motion";
 import { CiInstagram } from "react-icons/ci";
 import { CiTwitter } from "react-icons/ci";
+import Anim from "../../ui/TextAnimation/Anim.jsx"
+import AnimRL from "../../ui/TextAnimation/AnimRL.jsx"
 
 const schema = yup.object().shape({
   firstName: yup
@@ -50,6 +52,8 @@ export default function ContactForm() {
       <div className="fixed inset-0 w-full h-full bg-[#f0f7f9] -z-10" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 mx-auto px-6 md:px-6 max-w-6xl">
+
+        <Anim>
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="bg-white p-10 rounded-3xl shadow-md flex flex-col gap-4  "
@@ -162,7 +166,9 @@ export default function ContactForm() {
             page.
           </h1>
         </form>
+        </Anim>
 
+        <AnimRL>
         <div className="flex flex-col space-y-5 justify-center">
           <p className="text-red-500 font-medium">Contact Us</p>
           <h1 className="text-4xl font-semibold text-gray-900">
@@ -227,6 +233,9 @@ export default function ContactForm() {
             </div>
           </div>
         </div>
+        </AnimRL>
+
+
       </div>
     </div>
   );

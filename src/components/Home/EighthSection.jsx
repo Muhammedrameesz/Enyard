@@ -1,10 +1,14 @@
 import imageSection3 from "../../assets/images/image-section-3.webp";
 import { MdDone } from "react-icons/md";
+import Anim from "../../ui/TextAnimation/Anim.jsx"
+import AnimRL from "../../ui/TextAnimation/AnimRL.jsx"
 
 export default function EighthSection() {
   return (
     <div className="py-10 font-jakarta">
       <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 max-w-6xl xl:max-w-7xl mx-auto px-6 md:px-10">
+        
+        <Anim>
         <div className="flex flex-col gap-5">
           <p className="text-red-800 text-base"># No 1 Best Performance</p>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">
@@ -46,11 +50,13 @@ export default function EighthSection() {
             </div>
           </div>
         </div>
-
+        </Anim>
         {/* IMAGE SECTION */}
+        <AnimRL>
         <div>
           <img src={imageSection3} alt="image" className="w-full h-full" />
         </div>
+        </AnimRL>
       </section>
     </div>
   );

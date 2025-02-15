@@ -100,7 +100,7 @@ export default function OurTeam() {
                     className="w-32 h-32 md:w-40 md:h-40 lg:w-52 lg:h-52 rounded-full object-cover "
                   />
                   <div className="flex flex-col items-start">
-                    <h3 className="text-lg font-semibold mb-1 ">{member.name}</h3>
+                    <h3 className="text-lg font-semibold mb-1 text-gray-900 ">{member.name}</h3>
                     <p className="text-gray-600 text-sm font-medium">
                       {member.designation}
                     </p>

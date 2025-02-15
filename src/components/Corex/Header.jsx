@@ -1,8 +1,9 @@
 import bgImage from "../../assets/Corex/demo-three-bg9.webp";
-import { uppercaseFirst } from "../../helpers/UppercaseFirst";
-import image2 from "../../assets/Corex/demo-three-banner-image-three.webp"
+import image2 from "../../assets/Corex/demo-three-banner-image-three.webp";
+import HeaderAnim from "../../ui/TextAnimation/HeaderAnim";
 
 export default function Header() {
+  const headText = "Changing The Way You Think About The Software!";
   return (
     <div className="py-14 font-jakarta ">
       <div
@@ -11,9 +12,7 @@ export default function Header() {
       />
 
       <section className="flex flex-col justify-center items-center text-center gap-6">
-        <h1 className="text-5xl md:text-6xl font-semibold text-gray-900  leading-snug max-w-3xl">
-          {uppercaseFirst("Changing the way you think about the Software!")}
-        </h1>
+        <HeaderAnim text ={headText} highlightWords ={["Software!"]}/>
         <p className="max-w-3xl text-gray-600 leading-snug">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque libero
           recusandae aliquid, ratione totam sequi vel, tempore eaque incidunt
@@ -31,7 +30,11 @@ export default function Header() {
       </section>
 
       <div>
-        <img src={image2} alt="" className="w-full h-auto transform hover:translate-y-2 transition-transform duration-300"/>
+        <img
+          src={image2}
+          alt=""
+          className="w-full h-auto transform hover:translate-y-2 transition-transform duration-300"
+        />
       </div>
     </div>
   );

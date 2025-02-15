@@ -1,6 +1,7 @@
 import { FaRegStar, FaRegLightbulb, FaRegSmile } from "react-icons/fa";
 import SubtractImage from "../../assets/images/Subtract.webp";
 import OrangeDott from "../../ui/OrangeDott";
+import AnimHV from "../../ui/TextAnimation/AnimHV.jsx"
 
 export default function OurFeatures() {
   const dummyArray = [
@@ -35,11 +36,12 @@ export default function OurFeatures() {
       ></div>
 
       <section className=" grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-10 md:gap-16 max-w-6xl xl:max-w-7xl mx-auto px-6 md:px-10">
-        <div className="flex flex-col gap-5 ">
+        <div className="flex flex-col gap-5 z-10 ">
           {dummyArray.map((item, i) => (
+            <AnimHV key={i} >
             <div
               key={i}
-              className="flex items-center gap-5 bg-white p-10 rounded-3xl  z-10"
+              className="flex items-center gap-5 bg-white p-10 rounded-3xl  "
             >
               <div
                 className={`text-3xl rounded-full text-gray-900  p-4 ${
@@ -55,47 +57,72 @@ export default function OurFeatures() {
                 </p>
               </section>
             </div>
+            </AnimHV>
           ))}
         </div>
 
         <div className="z-10">
+          <AnimHV>
           <h1 className="text-sm  font-semibold text-red-500 mb-5">
             Our Features
           </h1>
+          </AnimHV>
+          
+          <AnimHV>
           <h1 className=" text-3xl sm:text-4xl md:text-5xl text-gray-900 font-semibold mb-5">
             Powering Your <span className="text-red-500">Business </span>Growth
           </h1>
+          </AnimHV>
+
+          <AnimHV>
           <p className="text-lg text-gray-600 font-jakarta mb-6">
             From secure and scalable hosting to a comprehensive enterprise
             resource planning system, we offer the tools you need to streamline
             operations, enhance productivity, and achieve your business goals.
           </p>
-
+          </AnimHV>
+           
+          <AnimHV>
           <div className="flex gap-5 items-center font-semibold text-gray-900 mb-5">
             <h1 className="text-xl p-1  px-4 border border-dashed border-red-500 text-red-500 rounded-full">
               1
             </h1>
             <h1 className="text-lg">High-Performance Hosting</h1>
           </div>
+          </AnimHV>
+
+          <AnimHV>
           <div className="flex gap-5 items-center font-semibold text-gray-900 mb-5">
             <h1 className="text-xl p-1  px-3 border border-dashed border-red-500 text-red-500 rounded-full">
               2
             </h1>
             <h1 className="text-lg">CoreX ERP Integration & Customization</h1>
           </div>
+          </AnimHV>
+
+          <AnimHV>
           <div className="flex gap-5 items-center font-semibold text-gray-900 mb-5">
             <h1 className="text-xl p-1  px-3 border border-dashed border-red-500 text-red-500 rounded-full">
               3
             </h1>
             <h1 className="text-lg">24/7 Expert Support</h1>
           </div>
+          </AnimHV>
+
+          <AnimHV>
           <div className="flex gap-5 items-center font-semibold text-gray-900 mb-5">
             <h1 className="text-xl p-1  px-3 border border-dashed border-red-500 text-red-500 rounded-full">
               4
             </h1>
             <h1 className="text-lg">Robust Security & Data Protection</h1>
           </div>
+          </AnimHV>
+
+
         </div>
+        
+
+
       </section>
     </div>
   );

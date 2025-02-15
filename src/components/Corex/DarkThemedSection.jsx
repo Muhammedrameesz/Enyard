@@ -1,5 +1,7 @@
 import { FaRegLightbulb, FaRegSmile, FaRegStar } from "react-icons/fa";
 import {uppercaseFirst} from "../../helpers/UppercaseFirst"
+import { motion } from "framer-motion";
+
 
 export default function DarkThemedSection() {
   const contents = [
@@ -34,16 +36,19 @@ export default function DarkThemedSection() {
         {/* Features Grid */}
         <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
           {contents.map((item, i) => (
-            <div 
+            <motion.div 
+            initial={{ rotateX: 0 }}
+              whileHover={{ rotateX: 25 }}
+              transition={{ duration: 0, ease: "easeInOut" }}
               key={i} 
-              className={`flex relative flex-col items-center text-center p-6 rounded-lg border border-gray-600 ${
+              className={`flex relative flex-col items-center text-center group p-6 rounded-lg transition-all duration-500 border border-gray-600 ${
                 i === 1 ? "bg-[#22324e]" : "bg-transparent"
               }`}
             >
-              <div className="absolute bottom-0 w-full h-1  bg-green-500 rounded-lg -z-0"/>
-              <div className="mb-5 ">{item.icon}</div>
+              <div className={`absolute bottom-0 w-full h-1  bg-transparent group-hover:bg-green-500 rounded-lg shadow-xl group-hover:shadow-custom shadow-green-200 -z-0 transition-all duration-500"`}/>
+              <div className="mb-5 bg-transparent group-hover:bg-gray-100 transition-colors duration-500 rounded-full p-2">{item.icon}</div>
               <h1 className="text-xl  font-semibold">{item.text}</h1>
-            </div>
+            </motion.div>
           ))} 
         </section>
 

@@ -1,8 +1,11 @@
+import AnimHV from "../../ui/TextAnimation/AnimHV.jsx"
+
 export default function secSection() {
   return (
     <div className="font-jakarta bg-white pt-16 pb-10 text-xl ">
       <section className="grid grid-cols-1 text-gray-950 md:grid-cols-3 items-center gap-10 max-w-6xl xl:max-w-7xl mx-auto px-6 md:px-10">
-
+            
+            <AnimHV delay={0.3}>
         <div className="flex flex-col gap-5 p-2 rounded-3xl bg-gradient-to-tl ">
           <div className="flex gap-5 items-end">
             <h1 className="relative h-[50px] w-[50px] rounded-full bg-[#fff0c7]">
@@ -17,8 +20,10 @@ export default function secSection() {
           Automate tedious tasks and boost productivity with our intuitive software solutions.
           </p>
         </div>
+        </AnimHV>
 
         {/* SECOND COLUMN */}
+        <AnimHV delay={0.6}>
         <div className="flex flex-col gap-5 p-2 rounded-3xl bg-gradient-to-tl  ">
           <div className="flex gap-5 items-end">
             <h1 className="relative h-[50px] w-[50px] rounded-full bg-[#e2ffca]">
@@ -32,9 +37,11 @@ export default function secSection() {
           Connect your team seamlessly and foster effective communication with our integrated platform.
           </p>
         </div>
+        </AnimHV>
 
         {/* 3RD COLUMN */}
-
+         
+         <AnimHV delay={0.9}>
         <div className="flex flex-col gap-5 p-2 rounded-3xl bg-gradient-to-tl   ">
           <div className="flex gap-5 items-end">
             <h1 className="relative h-[50px] w-[50px] rounded-full bg-[#cdedff]">
@@ -48,6 +55,7 @@ export default function secSection() {
           Our Flexible and Scalable solutions adapt to your evolving needs,ensuring long-term growth and success.
           </p>
         </div>
+        </AnimHV>
       </section>
     </div>
   );

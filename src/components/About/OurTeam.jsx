@@ -47,7 +47,7 @@ export default function OurTeam() {
             onMouseLeave={() => setTextHover(null)}
           >
             <img src={item.image} alt="image" className="mx-auto" />
-            <h1 className="font-medium text-lg mt-5 ml-10 md:ml-0">{item.name}</h1>
+            <h1 className="font-medium text-lg mt-5 ml-10 md:ml-0 text-gray-900">{item.name}</h1>
             <motion.p
               className="text-gray-600 font-medium  absolute left-10 md:left-0 -bottom-6"
               initial={{ opacity: 1, y: 0 }}

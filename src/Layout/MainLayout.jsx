@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import ScrollToTop from "../components/ScrolltoTp"
 
+
 export default function MainLayout() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -42,6 +43,8 @@ export default function MainLayout() {
           <IoIosArrowUp size={20} />
         </button>
       )}
+
+      
       <Outlet />
       <Footer />
     </div>
