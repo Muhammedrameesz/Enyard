@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
 import Image from "../../assets/TimeTickImages/Group-32251-scaled-removebg-preview.png";
+import Anim from "../../ui/TextAnimation/Anim.jsx"
+import AnimRL from "../../ui/TextAnimation/AnimRL.jsx"
 
 export default function HowTimeTickWorks() {
   return (
     <div className="font-jakarta py-20 lg:py-28 bg-[#191d27] text-white relative overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 px-6 md:px-16 mx-auto justify-center items-center relative z-10">
-        {/* Left Section - Text & SVG Shapes */}
+        <Anim>
         <section className="col-span-1 flex flex-col gap-5 justify-center relative">
           <p className="font-medium  tracking-wide z-10">
             How Time Tick Works
@@ -56,14 +58,18 @@ export default function HowTimeTickWorks() {
             }}
           />
         </section>
+        </Anim>
 
-        {/* Right Section - Image */}
+       
         <section className="col-span-2 flex justify-center relative">
+        <AnimRL >
           <img
             src={Image}
             alt="How Time Tick Works"
             className="w-full h-auto z-10"
           />
+        </AnimRL>
+
         </section>
       </div>
     </div>

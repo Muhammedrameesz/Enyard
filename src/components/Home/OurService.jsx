@@ -7,39 +7,41 @@ import section3Bg from "../../assets/images/Section-Three-Background.webp";
 import AnimHV from "../../ui/TextAnimation/AnimHV.jsx";
 // import Anim from "../../ui/TextAnimation/Anim.jsx";
 
-import { MdInsertChartOutlined } from "react-icons/md";
-import { MdOutlineDataThresholding } from "react-icons/md";
-import { MdOutlineDescription } from "react-icons/md";
-import { MdOutlineDesignServices } from "react-icons/md";
+import {
+  AiOutlineCalculator,
+  AiOutlineCalendar,
+  AiOutlineLaptop,
+  AiOutlineBarChart,
+} from "react-icons/ai";
 
 export default function OurService() {
   const contentData = [
     {
-      key: "analysis-marketing",
-      title: "Analysis Product Marketing",
-      description: "Integer luctus dolor.",
-      icon: <MdInsertChartOutlined />,
+      key: "1",
+      title: "Accurate Payroll Processing -Automate Time Calculations",
+    
+      icon: <AiOutlineCalculator />,
       image: image1,
     },
     {
-      key: "creative-strategy",
-      title: "Discover Creative Strategy",
-      description: "Orci varius natoque.",
-      icon: <MdOutlineDataThresholding />,
+      key: "2",
+      title: "Efficient Leave Management- Simplify & Streamline",
+      
+      icon: <AiOutlineCalendar />,
       image: image2,
     },
     {
-      key: "best-features",
-      title: "Best Features Development",
-      description: "Sed euismod non.",
-      icon: <MdOutlineDescription />,
+      key: "3",
+      title: "Remote Work Support-Advanced Features ",
+    
+      icon: <AiOutlineLaptop />,
       image: image3,
     },
     {
-      key: "solution-restore",
-      title: "Solution & Restore Easily",
-      description: "Fusce est sapien.",
-      icon: <MdOutlineDesignServices />,
+      key: "4",
+      title: "Customized Reporting-Make Data Driven Decisions",
+     
+      icon: <AiOutlineBarChart />,
       image: image4,
     },
   ];
@@ -52,12 +54,16 @@ export default function OurService() {
       ></div>
 
       <AnimHV>
-        <div className="flex flex-col justify-center mb-10 md:mb-16 items-center text-center text-3xl sm:text-4xl md:text-5xl  font-semibold text-gray-900 ">
-          <p className="text-base text-red-500 mb-5">Our Service</p>
-          <h1>What We Can Do For Your </h1>
-          <h1>
-            <span className="border-b-4 border-red-300">Application</span>{" "}
-            <span className="text-red-600">Design</span>
+        <div className=" mx-auto flex flex-col justify-center mb-10 md:mb-16 items-center text-center text-3xl sm:text-4xl md:text-5xl  font-semibold text-gray-900 ">
+          <p className="text-base text-red-500 mb-5">Our Exclusive Product</p>
+          <h1 className="space-y-2">
+            <span className="ml-2  ">
+              Smarter Attendance,
+            </span><br />
+            <span className="ml-2 ">
+              Seamless Workflows :
+            </span><br />
+            <span className="text-red-600"> Time Tick</span>
           </h1>
         </div>
       </AnimHV>
@@ -65,7 +71,7 @@ export default function OurService() {
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center text-center">
         {contentData.map((item, index) => (
           <AnimHV key={item.key} delay={index * 0.5}>
-            <motion.div className="flex flex-col items-center min-h-[600px] p-6 border-r border-red-200 transform hover:-translate-y-2 transition-all">
+            <motion.div className="flex flex-col items-center min-h-[600px] p-6 border-r border-red-200 transform hover:-translate-y-2 transition-all duration-300">
               {/* Icon and Title */}
               <div className="flex items-center gap-4 mb-10 md:mb-16">
                 <div
@@ -81,9 +87,7 @@ export default function OurService() {
                 </div>
                 <h1 className="flex flex-col text-xl font-semibold  text-gray-800 text-start">
                   {item.title}{" "}
-                  <span className="text-base font-jakarta font-normal text-gray-600 normal-case">
-                    {item.description}
-                  </span>
+                 
                 </h1>
               </div>
 

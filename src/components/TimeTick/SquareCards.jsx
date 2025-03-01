@@ -3,6 +3,7 @@ import image1 from "../../assets/TimeTickImages/image01.webp";
 import image2 from "../../assets/TimeTickImages/image02.webp";
 import image3 from "../../assets/TimeTickImages/image03.webp";
 import { MdArrowRightAlt } from "react-icons/md";
+import Anim from "../../ui/TextAnimation/Anim.jsx"
 
 export default function SquareCards() {
   const contents = [
@@ -30,6 +31,7 @@ export default function SquareCards() {
           backgroundImage: `url(${image})`,
         }}
       />
+      <Anim>
       <div className="flex flex-col justify-center text-gray-900 items-center text-center gap-2 px-6 md:px-10 mx-auto max-w-4xl mb-10">
         <h1 className="text-3xl md:text-4xl font-semibold">
           Gain A{" "}
@@ -63,9 +65,11 @@ export default function SquareCards() {
           inventore veritatis et quasi architecto.
         </p>
       </div>
+      </Anim>
 
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-6 md:px-10 mx-auto  gap-6">
         {contents?.map((item, i) => (
+          <Anim key={i} delay={i*0.2}>
           <div key={i} className="relative w-full group cursor-pointer">
             <img src={item.image} alt="image" className="w-full h-auto" />
             <div
@@ -114,6 +118,7 @@ export default function SquareCards() {
               </section>
             </div>
           </div>
+          </Anim>
         ))}
       </section>
     </div>

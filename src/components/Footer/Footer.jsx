@@ -1,24 +1,27 @@
 import EnyardLogo from "../../assets/images/Enyard new.png";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { FiPhone, FiMail } from "react-icons/fi";
-import FooterBg from "../../assets/images/Footer-Bg-1-1.webp";
-import {useNavigate} from "react-router-dom"
+// import FooterBg from "../../assets/images/Footer-Bg-1-1.webp";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
-    const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
-    <footer className="py-10  px-5 font-jakarta  relative w-full h-full">
-      <div
-        className="absolute inset-0 bg-no-repeat bg-center bg-cover border -z-10 rotate-180 "
-        style={{
-          backgroundImage: `url(${FooterBg})`,
-        }}
-      ></div>
-
+    <footer
+      className="py-10  px-5 font-jakarta text-gray-900 bg-no-repeat bg-center bg-cover border -z-10  relative w-full h-full"
+      style={{
+        backgroundImage: `url(https://img.freepik.com/premium-photo/hand-drawn-abstract-background-design_481527-41910.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid)`,
+      }}
+    >
       <div className="container  mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
         {/* First Column */}
         <div className="flex flex-col gap-5">
-          <img onClick={()=>navigate("/")} src={EnyardLogo} alt="Company Logo" className="w-40 cursor-pointer" />
+          <img
+            onClick={() => navigate("/")}
+            src={EnyardLogo}
+            alt="Company Logo"
+            className="w-40 cursor-pointer"
+          />
           <p className="text-gray-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
             lacinia odio vitae vestibulum.
@@ -38,9 +41,9 @@ const Footer = () => {
 
         {/* Second Column */}
         <div>
-          <h2 className="text-xl font-semibold text-gray-800 mb-4">Support</h2>
-          <ul className="text-gray-600 space-y-2">
-            <li>Forum Support</li>
+          <h2 className="text-xl font-semibold text-gray-800  mb-4">Support</h2>
+          <ul className="text-gray-600 space-y-2 font-medium ">
+            <li className="cursor-pointer">Forum Support</li>
             <li>Service</li>
             <li>Contact Us</li>
             <li>Pricing & Plans</li>

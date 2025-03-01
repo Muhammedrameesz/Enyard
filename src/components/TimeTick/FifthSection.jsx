@@ -1,19 +1,19 @@
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import image from "../../assets/TimeTickImages/strategic-value-of-data.webp";
-
+import Anim from "../../ui/TextAnimation/Anim.jsx"
+import AnimRL from "../../ui/TextAnimation/AnimRL.jsx"
 
 export default function forthSection() {
   return (
     <div className="py-14 bg-white font-jakarta">
       <section className="grid grid-cols-1 md:grid-cols-2 px-6 md:px-10 mx-auto max-w-6xl gap-8">
+        <Anim>
         <div className="flex flex-col justify-center gap-6">
-          <h1 className="font-medium text-red-500">
-            Explore How Can I Help You
-          </h1>
+          <h1 className="font-medium text-red-500">Key Benefits</h1>
           <h1 className="font-semibold text-3xl md:text-4xl text-gray-900 leading-relaxed">
-            A Risk
+            Why Settle For Less ? Unlock The Efficiency With
             <span className="relative ml-2">
-              Management
+              Time Tick
               <svg
                 className="absolute left-1/2 transform -translate-x-1/2 -bottom-2"
                 width="120"
@@ -31,12 +31,11 @@ export default function forthSection() {
                 />
               </svg>
             </span>{" "}
-            Company At The Forefront Of Risk Intelligence
           </h1>
           <p className="text-base mb-5 text-gray-600">
-            Perspiciatis unde omnis iste natus error sit voluptatem accusantium
-            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-            inventore veritatis et quasi architecto.
+            Simplify your international workforce management with TimeTick, the
+            complete time and attendance software that tackles time, payroll,
+            and compliance in one platform.
           </p>
 
           <section className="grid grid-cols-1 md:grid-cols-2 text-gray-900">
@@ -47,7 +46,8 @@ export default function forthSection() {
                   <IoIosCheckmarkCircleOutline />
                 </span>
                 <span className="text-lg font-semibold">
-                  Policy & Program Management
+                Timely Support
+
                 </span>
               </h1>
 
@@ -56,7 +56,7 @@ export default function forthSection() {
                   <IoIosCheckmarkCircleOutline />
                 </span>
                 <span className="text-lg font-semibold">
-                  Allocate resources and measure results
+                Free Bug Assistance
                 </span>
               </h1>
             </div>
@@ -68,7 +68,7 @@ export default function forthSection() {
                   <IoIosCheckmarkCircleOutline />
                 </span>
                 <span className="text-lg font-semibold">
-                  Identify hidden opportunities
+                Server Installation
                 </span>
               </h1>
 
@@ -77,16 +77,22 @@ export default function forthSection() {
                   <IoIosCheckmarkCircleOutline />
                 </span>
                 <span className="text-lg font-semibold">
-                  Due Diligence Vendor Compliance
+                Source Code Access
                 </span>
               </h1>
             </div>
           </section>
         </div>
-
+        </Anim>
+        <AnimRL>
         <div className="flex flex-col justify-center">
-          <img src={image} alt="image" className="transform hover:-translate-y-2 transition-transform duration-300"/>
+          <img
+            src={image}
+            alt="image"
+            className="transform hover:-translate-y-2 transition-transform duration-300"
+          />
         </div>
+        </AnimRL>
       </section>
     </div>
   );

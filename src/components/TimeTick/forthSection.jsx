@@ -1,22 +1,30 @@
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import image from "../../assets/TimeTickImages/how-can-help.webp";
+import Anim from "../../ui/TextAnimation/Anim.jsx"
+import AnimRL from "../../ui/TextAnimation/AnimRL.jsx"
 
 export default function forthSection() {
   return (
     <div className="py-14 bg-white font-jakarta">
       <section className="grid grid-cols-1 md:grid-cols-2 px-6 md:px-10 mx-auto max-w-6xl gap-8">
-        <div className="flex flex-col justify-center">
-          <img src={image} alt="image" className="transform hover:-translate-y-2 transition-transform duration-300"/>
-        </div>
 
+        <Anim>
+        <div className="flex flex-col justify-center">
+          <img
+            src={image}
+            alt="image"
+            className="transform hover:-translate-y-2 transition-transform duration-300"
+          />
+        </div>
+        </Anim>
+          
+          <AnimRL>
         <div className="flex flex-col justify-center gap-6">
-          <h1 className="font-medium text-red-500">
-            Explore How Can I Help You
-          </h1>
+          <h1 className="font-medium text-red-500">Features</h1>
           <h1 className="font-semibold text-3xl md:text-4xl text-gray-900">
-            Move Beyond Business Intelligence With
+            Formost
             <span className="relative ml-2">
-              Advanced
+              Attendance Managing System
               <svg
                 className="absolute left-1/2 transform -translate-x-1/2 -bottom-2"
                 width="120"
@@ -34,11 +42,11 @@ export default function forthSection() {
                 />
               </svg>
             </span>{" "}
-            Risk Analytics
+            For Your Business
           </h1>
           <p className="text-base mb-5 text-gray-600">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration by injecter.
+            Cloud-based time and attendance streamlines operations, letting you
+            dedicate more attention to your workforce.
           </p>
 
           <section className="grid grid-cols-1 md:grid-cols-2  text-gray-900 ">
@@ -49,7 +57,8 @@ export default function forthSection() {
                   <IoIosCheckmarkCircleOutline />
                 </span>
                 <span className="text-lg font-semibold">
-                  Policy & Program Management
+                Simplified User Master
+
                 </span>
               </h1>
 
@@ -58,7 +67,7 @@ export default function forthSection() {
                   <IoIosCheckmarkCircleOutline />
                 </span>
                 <span className="text-lg font-semibold">
-                  Allocate resources and measure results
+                Easy-Shift Management
                 </span>
               </h1>
             </div>
@@ -70,7 +79,7 @@ export default function forthSection() {
                   <IoIosCheckmarkCircleOutline />
                 </span>
                 <span className="text-lg font-semibold">
-                  Identify hidden opportunities
+                Insightful Reports
                 </span>
               </h1>
 
@@ -79,12 +88,13 @@ export default function forthSection() {
                   <IoIosCheckmarkCircleOutline />
                 </span>
                 <span className="text-lg font-semibold">
-                  Due Diligence Vendor Compliance
+                Comprehensive Dashboard
                 </span>
               </h1>
             </div>
           </section>
         </div>
+        </AnimRL>
       </section>
     </div>
   );

@@ -6,6 +6,7 @@ import OurTeam from "../pages/OurTeam";
 import TimeTick from "../pages/TimeTick";
 import Contact from "../pages/Contact";
 import Corex from "../pages/Corex";
+import Partners from "../pages/Partners";
 
 export const router = createBrowserRouter([
   {
@@ -24,7 +25,7 @@ export const router = createBrowserRouter([
         element: <OurTeam />,
       },
       {
-        path: "/hosting",
+        path: "/timetick",
         element: <TimeTick />,
       },
       {
@@ -34,6 +35,10 @@ export const router = createBrowserRouter([
       {
         path:"/CoreX-ERP",
         element:<Corex/>
+      },
+      {
+        path:"/partners",
+        element:<Partners/>
       }
     ],
   },

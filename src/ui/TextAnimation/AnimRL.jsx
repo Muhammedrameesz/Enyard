@@ -14,7 +14,7 @@ const SmoothSlide = ({ children, delay = 0.2, threshold = 0.2 }) => {
   }, [inView, controls]);
 
   const animationVariants = {
-    hidden: { opacity: 0, x: 70 }, 
+    hidden: { opacity: 0, x: 150 }, 
     visible: {
       opacity: 1,
       x: 0,

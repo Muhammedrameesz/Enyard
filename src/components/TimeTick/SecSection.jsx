@@ -1,90 +1,80 @@
 import {
   AiOutlineCloud,
   AiOutlineGlobal,
-  AiOutlineClockCircle,
-  AiOutlineCheckCircle,
   AiOutlineCalculator,
   AiOutlineSafetyCertificate,
   AiOutlineBarChart,
-  AiOutlineCalendar,
-  AiOutlineLaptop,
   AiOutlineLink,
+  AiOutlineClockCircle,
+  AiOutlineCalendar,
+  AiOutlineCheckCircle,
   AiOutlineAudit,
+  AiOutlineLaptop,
   AiOutlineDatabase,
 } from "react-icons/ai";
+
+import Anim from "../../ui/TextAnimation/Anim.jsx"
 
 export default function SecSection() {
   const features = [
     {
-      title: "Anywhere, Anytime Access",
-      description:
-        "Unleash the power of real-time attendance management from any corner of the globe.",
+      title: "Instant Access, Anywhere",
+      description: "Manage attendance in real-time from any location globally.",
       icon: <AiOutlineCloud />,
     },
     {
-      title: "Global Collaboration",
-      description:
-        "Break down borders and unite teams worldwide with a cloud hub for attendance harmony.",
+      title: "Collaboration",
+      description: "Connect and unify teams worldwide through a centralized attendance platform.",
       icon: <AiOutlineGlobal />,
     },
     {
-      title: "Time Savings",
-      description:
-        "Automation reduces the time spent on manual attendance tracking, allowing employees and managers to focus on more strategic tasks.",
-      icon: <AiOutlineClockCircle />,
-    },
-    {
-      title: "Accuracy",
-      description:
-        "Minimize errors associated with manual recording, calculation, and interpretation of attendance data, ensuring precision in payroll and compliance.",
-      icon: <AiOutlineCheckCircle />,
-    },
-    {
-      title: "Efficient Payroll Processing",
-      description:
-        "Streamline payroll by automating time calculations, ensuring accurate compensation based on worked hours and overtime.",
+      title: "Easy Payroll Process",
+      description: "Streamline payroll by automating time calculations for accurate compensation.",
       icon: <AiOutlineCalculator />,
     },
     {
       title: "Compliance Assurance",
-      description:
-        "Maintain compliance with labour laws and organizational policies, reducing the risk of errors and penalties associated with non-compliance.",
+      description: "Ensure adherence to labor laws and company policies, minimizing risks and penalties.",
       icon: <AiOutlineSafetyCertificate />,
     },
     {
       title: "Customized Reporting",
-      description:
-        "Generate detailed reports on attendance trends, helping management identify patterns and make data-driven decisions.",
+      description: "Gain insights into attendance patterns with detailed reports, enabling data-driven management decisions.",
       icon: <AiOutlineBarChart />,
     },
     {
-      title: "Leave Management",
-      description:
-        "Simplify and streamline the leave request and approval process, ensuring accurate tracking of employees' time off.",
-      icon: <AiOutlineCalendar />,
-    },
-    {
-      title: "Remote Work Support",
-      description:
-        "With advanced features, support remote work scenarios by allowing employees to log their working hours, even when working off-site.",
-      icon: <AiOutlineLaptop />,
-    },
-    {
-      title: "Integration Capability",
-      description:
-        "Integrate seamlessly with other HR and organizational systems, creating a cohesive and interconnected workflow.",
+      title: "Integration",
+      description: "Seamlessly connect with existing HR and organizational systems for a unified workflow.",
       icon: <AiOutlineLink />,
     },
     {
+      title: "Time Savings",
+      description: "Automate attendance tracking, freeing up time for more strategic tasks.",
+      icon: <AiOutlineClockCircle />,
+    },
+    {
+      title: "Efficient Leave Management",
+      description: "Streamline leave requests and approvals for accurate time-off tracking.",
+      icon: <AiOutlineCalendar />,
+    },
+    {
+      title: "Accuracy",
+      description: "Eliminate errors from manual recording and calculation, ensuring precise payroll and compliance.",
+      icon: <AiOutlineCheckCircle />,
+    },
+    {
       title: "Approval Workflow",
-      description:
-        "A structured workflow for managers to review and approve leave requests, ensuring efficient decision-making.",
+      description: "Implement a structured approval process for efficient leave request management.",
       icon: <AiOutlineAudit />,
     },
     {
+      title: "Remote Work Support",
+      description: "Empower remote employees to log their hours, facilitating flexible work arrangements.",
+      icon: <AiOutlineLaptop />,
+    },
+    {
       title: "Leave Balances",
-      description:
-        "Real-time tracking of employees' leave balances, providing visibility into accrued, used, and remaining leave.",
+      description: "Provide real-time visibility into accrued, used, and remaining leave balances.",
       icon: <AiOutlineDatabase />,
     },
   ];
@@ -107,12 +97,13 @@ export default function SecSection() {
     <div className="py-10 pb-20 font-jakarta bg-white">
       <div className="flex flex-col justify-center items-center text-center mb-10 md:mb-16">
         <h1 className="font-semibold text-3xl md:text-4xl max-w-md text-gray-900">
-          Unlocking The Benefits Of TimeTick For Employees
+        Enhancing Employee Efficiency
         </h1>
       </div>
 
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-6 md:px-10 mx-auto max-w-6xl gap-8">
         {features?.map((item, i) => (
+          <Anim key={i} delay={i*0.2}>
           <div
             key={i}
             className={`flex flex-col gap-4 h-[230px] p-4 bg-white rounded-3xl 
@@ -129,6 +120,7 @@ export default function SecSection() {
               {item.description}
             </p>
           </div>
+          </Anim>
         ))}
       </section>
     </div>

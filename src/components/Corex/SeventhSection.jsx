@@ -1,51 +1,53 @@
+import Anim from "../../ui/TextAnimation/Anim.jsx"
+
 export default function SeventhSection() {
   const sectionsData = [
-    {
-      title: "Innovative Solutions for Modern Businesses",
-      subheading: "Title",
-      description:
-        "We provide cutting-edge IT solutions tailored to meet the needs of businesses in a digital era. Our expertise ensures efficiency, scalability, and innovation.",
-      image:
-        "https://apptek.radiantthemes.com/wp-content/uploads/2022/10/10-1-768x458.webp", // Replace with actual image path
-    },
     {
       title: "Seamless Integration & Performance",
       subheading: "Title",
       description:
-        "Our services are designed to integrate seamlessly with your existing infrastructure while enhancing overall performance and security.",
+        "CoreX seamlessly integrates with a wide range of third-party applications and systems, eliminating manual data entry and minimizing the potential for errors.  From accounting software and CRM platforms to e-commerce solutions and other essential business tools, CoreX streamlines your workflows and maintains consistent data across all platforms.",
       image:
-        "https://apptek.radiantthemes.com/wp-content/uploads/2022/10/12-1-768x458.webp", // Replace with actual image path
+        "https://img.freepik.com/free-vector/isometric-devops-illustration_52683-84175.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
     },
+
     {
-      title: "Future-Proof Your Business",
+      title: "Expert Data Analytics",
       subheading: "Title",
       description:
-        "Leverage our advanced technological solutions to future-proof your business and stay ahead in an ever-evolving market.Our services are designed to integrate seamlessly with your existing infrastructure ",
+        "CoreX equips you with robust analytics and reporting tools, providing a comprehensive understanding of your business performance.  Interactive dashboards and customizable reports offer valuable insights into key metrics, including sales trends, inventory levels, customer behavior, and financial performance. This data-driven approach empowers you to make informed decisions and optimize your operations for maximum efficiency.",
       image:
-        "https://apptek.radiantthemes.com/wp-content/uploads/2022/10/6-3-768x458.webp", // Replace with actual image path
+        "https://img.freepik.com/free-photo/modern-equipped-computer-lab_23-2149241211.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
+    },
+    {
+      title: "Robust Security",
+      subheading: "Title",
+      description:
+        "CoreX ERP prioritizes robust security.  Built on a secure, cloud-based architecture, CoreX leverages the power and reliability of Amazon AWS for its hosting.  This ensures high availability and data protection through advanced security measures, including encryption, access controls, and regular security audits.  Your business data is safe and accessible within CoreX's secure environment.",
+      image:
+        "https://img.freepik.com/free-vector/wireframe-chain-with-digital-code-lock-blockchain-cyber-security-safe-privacy-concept_127544-953.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
     },
   ];
 
   return (
     <div className="py-16 font-jakarta text-gray-950 bg-gray-100">
-      <section className="space-y-6 text-center max-w-4xl mx-auto px-6 md:px-0 mb-10">
+      <Anim>
+      <section className="space-y-6 text-center max-w-4xl mx-auto px-6 md:px-10 mb-16">
         <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 leading-snug">
-          Hyper-Manage Operations With{" "}
-          <span className="font-bold text-red-500">Rich Analytics</span>
+          Drive Business Success with
+          <span className="font-bold text-red-500 ml-2">
+            Meticulous Features
+          </span>
         </h1>
-        <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error facilis
-          mollitia tempore saepe enim corporis odit, quisquam sapiente dolorem,
-          iste harum, quis magni reiciendis inventore quos odio voluptatibus
-          assumenda quod.
-        </p>
       </section>
+      </Anim>
 
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-10 mx-auto max-w-7xl">
         {sectionsData.map((item, i) => (
+          <Anim key={i} delay={i*0.2}>
           <div
             key={i}
-            className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform  hover:shadow-2xl"
+            className="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-custom transition-all duration-300"
           >
             {/* Image Section */}
             <img
@@ -55,10 +57,11 @@ export default function SeventhSection() {
             />
 
             {/* Content Section */}
-            <div className="p-6 space-y-4">
-              <p className="text-red-500 font-medium uppercase tracking-wide">
-                {item.subheading}
-              </p>
+            <div className="p-6 space-y-4 relative min-h-[340px]">
+             
+             {/* <div className="w-full h-[1px] bg-gray-400 rounded-md"></div> */}
+
+             
               <h1 className="text-gray-900 text-xl font-semibold">
                 {item.title}
               </h1>
@@ -67,14 +70,10 @@ export default function SeventhSection() {
               </p>
 
               {/* Divider Line */}
-              <div className="w-full h-[1px] bg-gray-400 rounded-md"></div>
-
-              {/* Button */}
-              <button className="mt-4 px-5 py-2 text-white bg-gray-900 hover:bg-gray-950 transition-all rounded-full text-sm font-medium">
-                Know More
-              </button>
+              <div className="absolute bottom-5 left-1/2 -translate-x-1/2  w-[90%] h-[1px] bg-gray-400 rounded-md"></div>
             </div>
           </div>
+          </Anim>
         ))}
       </section>
     </div>

@@ -1,30 +1,34 @@
-import { FaRocket, FaUsers, FaCogs } from "react-icons/fa";
-import { TiMessages } from "react-icons/ti";
-import { MdArrowOutward } from "react-icons/md";
+import {
+  FaObjectGroup,
+  FaPlayCircle,
+  FaChartBar,
+  FaChartLine,
+} from "react-icons/fa";
+import Anim from "../../ui/TextAnimation/Anim.jsx";
+import AnimRL from "../../ui/TextAnimation/AnimRL.jsx";
 
 const features = [
   {
-    icon: <FaRocket className="text-red-500 text-4xl  " />,
-    name: "Performance",
+    icon: <FaPlayCircle className="text-red-500 text-4xl  " />,
+    name: "Automation",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident maiores voluptatem non.",
+      "Routine activities like billing and stock management are done automatically. This minimizes mistakes and improves overall work speed.",
   },
   {
-    icon: <FaUsers className="text-purple-500 text-4xl " />,
-    name: "Collaboration",
+    icon: <FaChartBar className="text-purple-500 text-4xl " />,
+    name: "Real-Time Reporting",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident maiores voluptatem non.",
+      "We provide up-to-the-minute views of business performance through visual dashboards. This helps in making quicker and smarter strategic decisions.",
   },
   {
-    icon: <FaCogs className="text-gray-600 text-4xl " />,
-    name: "Customization",
+    icon: <FaChartLine className="text-yellow-500 text-4xl " />,
+    name: "Scalability",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident maiores voluptatem non.",
+      "CoreX can easily grow with your business. They can handle more users, new features, and increased operational complexity as needed.",
   },
 ];
 
 export default function CardSection() {
-
   return (
     <div className="font-jakarta py-10 bg-white space-y-10">
       <div className="grid grid-cols-1 md:grid-cols-3  px-6 md:px-10 mx-auto max-w-6xl gap-7  ">
@@ -32,30 +36,30 @@ export default function CardSection() {
           className="flex flex-col justify-center items-center text-center gap-5 col-span-1 md:col-span-2 
         bg-gradient-to-br from-customBlue via-customBlue to-mediumCustomBlue py-16  text-white rounded-3xl"
         >
-          <h1 className="text-transparent uppercase bg-clip-text bg-gradient-to-tr text-lg font-semibold from-orange-500 to-white">
-            Accelerate Your Revenue
-          </h1>
-          <h1 className="text-4xl font-semibold">Track Companies With Your</h1>
-          <h1 className="text-4xl font-bold">Management</h1>
+          <Anim>
+            <h1 className="text-transparent uppercase bg-clip-text bg-gradient-to-tr text-lg font-semibold from-orange-500 to-white">
+              Mange Your Entire Business
+            </h1>
+            <h1 className="text-4xl font-semibold">
+              Limitless Solutions, ONE Platform
+            </h1>
+            <h1 className="text-4xl font-bold"> CoreX Business Suit</h1>
+          </Anim>
         </section>
 
         <section className="flex flex-col justify-center bg-white shadow-custom rounded-3xl space-y-5 p-8">
+          <Anim>
           <div className="flex gap-5 items-center  ">
-            <TiMessages className="text-4xl text-yellow-500" />
-            <h1 className="text-xl font-semibold text-gray-900">
-              Lorem Ipsum Dolor{" "}
-            </h1>
+            <FaObjectGroup className="text-4xl text-green-500" />
+            <h1 className="text-xl font-semibold text-gray-900">Integration</h1>
           </div>
-          <h1 className="text-sm font-medium text-gray-500">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-            maiores voluptatem non.
+          <h1 className="text-base font-medium text-gray-500">
+            CoreX ERP systems consolidate core business operations, facilitating
+            a smooth exchange of information between departments. This leads to
+            better teamwork and more informed managerial choices.
           </h1>
+          </Anim>
           <div className="bg-gray-100 h-[1px] w-[100%]" />
-
-          <button className="text-base font-semibold w-fit group text-gray-900">
-            Read More{" "}
-            <MdArrowOutward className="inline-block text-xl transform group-hover:translate-x-1 transition-transform duration-300" />
-          </button>
         </section>
       </div>
 
@@ -65,21 +69,20 @@ export default function CardSection() {
             key={i}
             className="flex flex-col justify-center bg-white shadow-custom rounded-3xl space-y-5 p-8"
           >
-            <div className="flex items-center gap-5  ">
-              <div className="">{item.icon}</div>
-              <h1 className="text-xl font-semibold text-gray-900">
-                {item.name}{" "}
+            <AnimRL>
+              <div className="flex items-center gap-5  ">
+                <div className="">{item.icon}</div>
+                <h1 className="text-xl font-semibold text-gray-900">
+                  {item.name}{" "}
+                </h1>
+              </div>
+            </AnimRL>
+            <AnimRL>
+              <h1 className="text-base font-medium text-gray-500">
+                {item.description}
               </h1>
-            </div>
-            <h1 className="text-sm font-medium text-gray-500">
-              {item.description}
-            </h1>
+            </AnimRL>
             <div className="bg-gray-200 h-[1px] w-[100%]" />
-
-            <button className="text-base font-semibold w-fit group text-gray-900">
-              Read More{" "}
-              <MdArrowOutward className="inline-block text-xl transform group-hover:translate-x-1 transition-transform duration-300" />
-            </button>
           </section>
         ))}
       </div>

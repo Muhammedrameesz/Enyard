@@ -1,20 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MdClose, MdKeyboardArrowDown, MdMenu } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
 import { navLinks, dropdownLinks } from "./navlinks.jsx";
 import EnyardLogo from "../assets/images/Enyard new.png";
 
-
 export default function ResponsiveNav() {
   const [hoverLink, setHoverLink] = useState("");
   const [drawerOpen, setDrawerOpen] = useState(false);
   const navigate = useNavigate();
 
-  const handleClick = ()=>{
-    setDrawerOpen(false)
-    navigate("/contact-us")
-  }
+  const handleClick = () => {
+    setDrawerOpen(false);
+    navigate("/contact-us");
+  };
+
+  useEffect(() => {
+    if (drawerOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [drawerOpen]);
 
   return (
     <>
@@ -45,7 +55,12 @@ export default function ResponsiveNav() {
             >
               {/* Close Button */}
               <div className="flex justify-between items-center mb-6">
-                <img  onClick={()=>navigate("/")} src={EnyardLogo} alt="" className="w-32" />
+                <img
+                  onClick={() => navigate("/")}
+                  src={EnyardLogo}
+                  alt=""
+                  className="w-32"
+                />
                 <button onClick={() => setDrawerOpen(false)}>
                   <MdClose size={30} />
                 </button>

@@ -9,7 +9,7 @@ import { FaBlog } from "react-icons/fa";
 export const navLinks = [
   { path: "/", element: "Home" },
   { path: "", element: "Company", hasDropdown: true },
-  { path: "/hosting", element: "Hosting" },
+  { path: "/timetick", element: "TimeTick" },
   { path: "/CoreX-ERP", element: "CoreX Business Suite" },
   { path: "", element: "Resources", hasDropdown: true },
 ];

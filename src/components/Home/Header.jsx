@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import Mobiledevice from "../../assets/images/mobile-device-banner2.png";
 // import Bgimage from "../../assets/images/Mobile-Device-Banner-Background.webp";
-import { MdKeyboardArrowRight } from "react-icons/md";
 import Anim from "../../ui/TextAnimation/Anim.jsx"
 import AnimRL from "../../ui/TextAnimation/AnimRL.jsx"
+import AnimatedButton from "../../ui/AnimatedButton.jsx"
 
 export default function Header() {
   const text = "Innovative IT Solutions For Your, ";
@@ -88,10 +88,7 @@ export default function Header() {
           </Anim>
           <div>
             <Anim delay={0.3}>
-            <button className="text-lg group font-semibold border border-black py-3 px-8 rounded-full  transition-colors duration-300 bg-black text-white">
-              Explore More
-              <MdKeyboardArrowRight className="transform group-hover:translate-x-1 transition-transform duration-500  inline-block ml-2" />
-            </button>
+           <AnimatedButton text="Explore More"/>
             </Anim>
           </div>
         </section>

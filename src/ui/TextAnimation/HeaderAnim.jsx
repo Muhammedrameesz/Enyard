@@ -32,7 +32,4 @@ HeaderAnim.propTypes = {
   color: PropTypes.string, 
 };
 
-// ✅ Default Props (if values are not passed)
-HeaderAnim.defaultProps = {
-  highlightWords: [], 
-};
+
